@@ -169,26 +169,16 @@ nav {
     width: 25px;
 }
 /* CONNECT SECTION */
-.social-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
-    width: 300px;
-    margin: 20px 0px;
-    line-height: 1;
-    margin-bottom: 0px;
-}
-.social-link {
+
+/* FOOTER */
+footer {
+    background: var(--primary-2);
     text-align: center;
+    padding: 20px 0px;
 }
 .social-link i {
     font-size: 3rem;
 }
-/* FOOTER */
-    footer {
-        text-align: center;
-    }
 /* MEDIA INQUIRIES */
 @media screen and (min-width: 700px) {
     section {
