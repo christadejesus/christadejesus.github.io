@@ -82,12 +82,16 @@ button {
   padding: 0 2rem;
   z-index: 1000;
 }
+.topnav-container a {
+  color: inherit;
+}
 .nav-links {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
+
 /* HERO SECTION */
 .hero {
   display: flex;
