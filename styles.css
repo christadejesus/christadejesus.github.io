@@ -112,3 +112,7 @@ button {
   height: var(--topnav-height);
   background: var(--primary);
   color: var(--neutral-lt);
+}
+.footer a {
+  color: inherit;
+}
