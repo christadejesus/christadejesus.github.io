@@ -58,8 +58,6 @@ button {
 /* STRUCTURE & POSITIONING */
 .content-area {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   gap: 4rem;
   width: 100%;
