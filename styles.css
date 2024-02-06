@@ -62,6 +62,7 @@ button {
   gap: 4rem;
   width: 100%;
   max-width: 900px;
+  margin: 0 auto;
   padding: 2rem;
 }
 
@@ -86,8 +87,8 @@ button {
 .nav-links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  gap: 4rem;
 }
 
 /* HERO SECTION */
