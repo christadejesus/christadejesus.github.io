@@ -30,7 +30,9 @@
   font-size: 10;
 
   /* OTHER VARIABLES */
-  --topnav-height: 60px;
+  --topnav-height: 70px;
+  --transition: all 200ms ease-in-out;
+  --box-shadow-dk: 0px 4px 12px rgba(0,0,0,.5);
 }
 
 /* GLOBAL STYLES */
@@ -42,6 +44,8 @@ body {
   font-family: var(--sans-serif);
   color: var(--neutral-dk);
 }
+
+/* LINKS & BUTTONS */
 a {
   text-decoration: none;
   color: var(--primary);
@@ -55,7 +59,37 @@ button {
   font-size: inherit;
   cursor: pointer;
 }
+.btn {
+  font-weight: 500;
+  text-transform: lowercase;
+  padding: 8px 16px;
+  border-radius: 3px;
+  box-shadow: var(--box-shadow-dk);
+  transition: var(--transition);
+}
+.btn:hover {
+  transform: scale(108%);
+}
+
+/* COLOR CLASSES */
+.primary {
+  background: var(--primary);
+}
+.accent-1 {
+  background: var(--accent-1);
+}
+.accent-2 {
+  background: var(--accent-2);
+}
+.accent-3 {
+  background: var(--accent-3);
+}
+.accent-4 {
+  background: var(--accent-4);
+}
+
 /* STRUCTURE & POSITIONING */
+
 .content-area {
   display: flex;
   flex-direction: column;
@@ -68,7 +102,6 @@ button {
 
 /* TOPNAV */
 .topnav-container {
-  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -81,18 +114,46 @@ button {
   padding: 0 2rem;
   z-index: 1000;
 }
-.topnav-container a {
-  color: inherit;
-}
 .nav-links {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4rem;
 }
+.nav-links a {
+  color: inherit;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  transition: var(--transition);
+}
+.nav-links a:hover {
+  border-color: var(--accent-4);
+  text-decoration: none;
+}
 
 /* HERO SECTION */
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  height: calc(100vh - (var(--topnav-height)*2));
+  color: var(--neutral-lt);
+  background: var(--primary);
+}
+.hero h1, .hero p {
+  margin: 0;
+  line-height: 1;
+}
+.hero h1 {
+  font-size: 4rem;
+}
+
+/* PAGE BANNERS */
+.banner {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,6 +166,7 @@ button {
 /* MAIN */
 /* FOOTER */
 .footer {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
