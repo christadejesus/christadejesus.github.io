@@ -14,8 +14,7 @@ class Header extends HTMLElement {
                     width: 100%;
                     height: var(--topnav-height);
                     background: var(--primary);
-                    color: var(--neutral-lt);
-                    padding: 0 2rem;
+                    padding: 0 10%;
                     z-index: 1000;
                 }
                 .topnav {
@@ -30,24 +29,17 @@ class Header extends HTMLElement {
                     list-style-type: none;
                     margin: 0 auto;
                 }
-                .topnav-link a {
-                    padding: 8px 16px;
-                    border: 2px solid transparent;
-                    border-radius: 30px;
+                .topnav-link a {                  
                     transition: var(--transition);
                     font-size: 1.6rem;
                     letter-spacing: 1.5;
                     text-transform: lowercase;
-                    color: var(--neutral-lt);
+                    color: var(--accent-2);
                 }
                 .topnav-link a:hover {
-                    border-color: var(--accent-4);
+                    color: var(--neutral-lt);
                     text-decoration: none;
                 }  
-                .current {
-                    border-color: var(--accent-2);
-                    text-decoration: none;
-                }
             
             </style>
             <header class="topnav-container">

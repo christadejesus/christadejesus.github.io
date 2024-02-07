@@ -10,21 +10,19 @@
 :root {
   /* COLORS */
   --neutral-lt: #fff;
-  --neutral-mdlt: #999;
-  --neutral-md: #444;
-  --neutral-dk: #222;
+  --neutral-mdlt: #d9dbdf;
+  --neutral-md: #919294;
+  --neutral-mddk: #4d4e52;
+  --neutral-dk: #1d1e1f;
 
-  --primary: #4a154b;
-  --accent-1: #e01e5a;
-  --accent-2: #ecb22e;
-  --accent-3: #2eb67d;
-  --accent-4: #36c5f0;
+  --primary: #2f323a;
+  --accent-1: #FF7077;
+  --accent-2: rgb(255, 176, 103);
+  --accent-3: #ACEEF3;
+  --accent-4: #ffe9e4;
 
-  --overlay-primary-1: ;
-  --overlay-accent-1: ;
-  --overlay-accent-2: ;
-  --overlay-lt: rgba(255,255,255,.5);
-  --overlay-dk: rgba(0,0,0,.5);
+  --overlay-primary-1: rgba(47, 50, 58, .8);
+  --overlay-accent-2: rgba(255, 176, 103, .8);
   
   /* FONTS */
   --sans-serif: "Montserrat", sans-serif;
@@ -155,9 +153,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  height: 350px;
   background: var(--neutral-mdlt);
   padding: 2rem;
+  border-radius: 12px; 
 }
 .project-card-label {
   display: flex;
@@ -175,6 +174,9 @@ button {
 @media screen and (min-width: 750px) {
   .project-card-container {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .project-card {
+    height: 250px;
   }
   .project-card-label {
     font-size: 1.4rem;
