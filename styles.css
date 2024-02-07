@@ -10,6 +10,7 @@
 :root {
   /* COLORS */
   --neutral-lt: #fff;
+  --neutral-mdlt: #999;
   --neutral-md: #444;
   --neutral-dk: #222;
 
@@ -99,6 +100,12 @@ button {
   margin: 0 auto;
   padding: 2rem;
 }
+.content-area:first-of-type{
+  margin-top: 4rem;
+}
+.content-area:last-of-type{
+  margin-bottom: 4rem;
+}
 
 @media screen and (min-width: 750px) {
   .nav-links a {
@@ -137,5 +144,49 @@ button {
   color: var(--neutral-lt);
   background: var(--primary);
 }
-/* MAIN */
+/* PORTFOLIO */
+.project-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: var(--neutral-mdlt);
+  padding: 2rem;
+}
+.project-card-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: var(--neutral-lt);
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 2rem;
+  text-align: center;
+}
 
+@media screen and (min-width: 750px) {
+  .project-card-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .project-card-label {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .project-card {
+    padding: 2rem 10%;
+  }
+  .project-card-label {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+}
