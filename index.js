@@ -1,19 +1,19 @@
 // PROJECT and CASE CARDS 
 const featuredData = [
-    { "name": "Project 1", "url": "", "img": "itProject4.png" },
-    { "name": "Project 2", "url": "", "img": "itProject4.png" },
-    { "name": "Project 3", "url": "", "img": "itProject4.png" },
+    { "name": "Project 1", "demoUrl": "", "codeUrl": "", "img": "itProject4.png" },
+    { "name": "Project 2", "demoUrl": "", "codeUrl": "", "img": "itProject4.png" },
+    { "name": "Project 3", "demoUrl": "", "codeUrl": "", "img": "itProject4.png" },
 ];
 
 const developmentData = [
-    { "name": "Project 1", "url": "", "img": "itProject4.png" },
-    { "name": "Project 2", "url": "", "img": "itProject4.png" },
-    { "name": "Project 3", "url": "", "img": "itProject4.png" },
+    { "name": "Project 1", "demoUrl": "", "codeUrl": "", "img": "itProject4.png" },
+    { "name": "Project 2", "demoUrl": "", "codeUrl": "", "img": "itProject4.png" },
+    { "name": "Project 3", "demoUrl": "", "codeUrl": "", "img": "itProject4.png" },
 ];
 const designData = [
-    { "name": "Project 1", "url": "", "img": "itProject4.png" },
-    { "name": "Project 2", "url": "", "img": "itProject4.png" },
-    { "name": "Project 3", "url": "", "img": "itProject4.png" },
+    { "name": "Project 1", "demoUrl": "", "codeUrl": "", "img": "itProject4.png" },
+    { "name": "Project 2", "demoUrl": "", "codeUrl": "", "img": "itProject4.png" },
+    { "name": "Project 3", "demoUrl": "", "codeUrl": "", "img": "itProject4.png" },
 ];
 
 const itData = [
@@ -33,7 +33,8 @@ function createProjectCards(containerId, data) {
             <div class="project-card-label">
                 <h3>${project.name}</h3>
                 <p>
-                    <a href="${project.url}" target="_blank">Demo <i class="ri-arrow-right-line"></i></a>
+                    <a href="${project.demoUrl}" target="_blank">Demo <i class="ri-arrow-right-line"></i></a></br>
+                    <a href="${project.codeUrl}" target="_blank">Code <i class="ri-arrow-right-line"></i></a>
                 </p>
             </div>
         `;

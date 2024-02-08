@@ -185,7 +185,6 @@ button {
   font-weight: 500;
   border-radius: 8px;
   padding: 4rem 2rem;
-  text-align: center;
   z-index: 10;
   box-shadow: var(--box-shadow-sm);
 }
