@@ -34,10 +34,10 @@ class Header extends HTMLElement {
                     font-size: 1.6rem;
                     letter-spacing: 1.5;
                     text-transform: lowercase;
-                    color: var(--accent-2);
+                    color: var(--neutral-lt);
                 }
                 .topnav-link a:hover {
-                    color: var(--neutral-lt);
+                    color: var(--accent-3);
                     text-decoration: none;
                 }  
             

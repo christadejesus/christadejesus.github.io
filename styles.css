@@ -31,7 +31,8 @@
   /* OTHER VARIABLES */
   --topnav-height: 70px;
   --transition: all 200ms ease-in-out;
-  --box-shadow-dk: 0px 4px 12px rgba(0,0,0,.5);
+  --box-shadow-sm: 0px 4px 12px rgba(0,0,0,.5);
+  --box-shadow-md: 0px 6px 14px rgba(0,0,0,.4);
 }
 
 /* GLOBAL STYLES */
@@ -63,7 +64,7 @@ button {
   text-transform: lowercase;
   padding: 8px 16px;
   border-radius: 3px;
-  box-shadow: var(--box-shadow-dk);
+  box-shadow: var(--box-shadow-sm);
   transition: var(--transition);
 }
 .btn:hover {
@@ -146,10 +147,11 @@ button {
 .project-card-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 4rem;
   margin: 2rem 0;
 }
 .project-card {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,6 +159,21 @@ button {
   background: var(--neutral-mdlt);
   padding: 2rem;
   border-radius: 12px; 
+  overflow: hidden;
+  box-shadow: var(--box-shadow-md);
+}
+.project-img {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: all 300ms ease-in-out;
+  z-index: 1;
+}
+.project-card:hover .project-img {
+  height: 120%;
+  width: 120%;
+  opacity: 80%;
 }
 .project-card-label {
   display: flex;
@@ -166,9 +183,11 @@ button {
   gap: 1rem;
   background: var(--neutral-lt);
   font-weight: 500;
-  border-radius: 2px;
-  padding: 2rem;
+  border-radius: 8px;
+  padding: 4rem 2rem;
   text-align: center;
+  z-index: 10;
+  box-shadow: var(--box-shadow-sm);
 }
 
 @media screen and (min-width: 750px) {

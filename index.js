@@ -1,25 +1,25 @@
-
+// PROJECT and CASE CARDS 
 const featuredData = [
-    { "name": "Project 1", "url": "https://christadejesus.github.io", "img": "img.png" },
-    { "name": "Project 2", "url": "https://christadejesus.github.io", "img": "img.png" },
-    { "name": "Project 3", "url": "https://christadejesus.github.io", "img": "img.png" },
+    { "name": "Project 1", "url": "", "img": "itProject4.png" },
+    { "name": "Project 2", "url": "", "img": "itProject4.png" },
+    { "name": "Project 3", "url": "", "img": "itProject4.png" },
 ];
 
 const developmentData = [
-    { "name": "Project 1", "url": "https://christadejesus.github.io", "img": "img.png" },
-    { "name": "Project 2", "url": "https://christadejesus.github.io", "img": "img.png" },
-    { "name": "Project 3", "url": "https://christadejesus.github.io", "img": "img.png" },
+    { "name": "Project 1", "url": "", "img": "itProject4.png" },
+    { "name": "Project 2", "url": "", "img": "itProject4.png" },
+    { "name": "Project 3", "url": "", "img": "itProject4.png" },
 ];
 const designData = [
-    { "name": "Project 1", "url": "https://christadejesus.github.io", "img": "img.png" },
-    { "name": "Project 2", "url": "https://christadejesus.github.io", "img": "img.png" },
-    { "name": "Project 3", "url": "https://christadejesus.github.io", "img": "img.png" },
+    { "name": "Project 1", "url": "", "img": "itProject4.png" },
+    { "name": "Project 2", "url": "", "img": "itProject4.png" },
+    { "name": "Project 3", "url": "", "img": "itProject4.png" },
 ];
 
 const itData = [
-    { "name": "Cybersecurity Enhancement", "url": "https://christadejesus.github.io", "img": "img.png" },
-    { "name": "Laptop Password Recovery", "url": "https://christadejesus.github.io", "img": "img.png" },
-    { "name": "Laptop Screen Replacement", "url": "https://christadejesus.github.io", "img": "img.png" },
+    { "name": "Cybersecurity Enhancement", "url": "", "img": "itProject1.png" },
+    { "name": "Laptop Password Recovery", "url": "", "img": "itProject2.png" },
+    { "name": "Laptop Screen Replacement", "url": "", "img": "itProject3.png" },
 ];
 
 function createProjectCards(containerId, data) {
@@ -29,6 +29,7 @@ function createProjectCards(containerId, data) {
         const card = document.createElement("div");
         card.classList.add("project-card");
         card.innerHTML = `
+            <img src="./assets/${project.img}" class="project-img"/>
             <div class="project-card-label">
                 <h3>${project.name}</h3>
                 <p>
@@ -47,6 +48,7 @@ function createCaseCards(containerId, data) {
         const card = document.createElement("div");
         card.classList.add("project-card");
         card.innerHTML = `
+            <img src="./assets/${project.img}" class="project-img"/>
             <div class="project-card-label">
                 <h3>${project.name}</h3>
                 <p>
