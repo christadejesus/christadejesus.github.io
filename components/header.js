@@ -6,6 +6,7 @@ class Header extends HTMLElement {
         this.innerHTML = `
             <style>
                 .topnav-container {
+                    position: fixed;
                     top: 0;
                     left: 0;
                     display: flex;
@@ -42,13 +43,12 @@ class Header extends HTMLElement {
                 }  
             
             </style>
-            <header class="topnav-container">
+            <header class="topnav-container" id="top">
                 <nav class="topnav">
                     <ul class="topnav-links">
                         <li class="topnav-link"><a href="/index.html">home</a></li>
-                        <li class="topnav-link"><a href="/about.html">about</a></li>
                         <li class="topnav-link"><a href="/portfolio.html">portfolio</a></li>
-                        <li class="topnav-link"><a href="/connect.html">connect</a></li>                    
+                        <li class="topnav-link"><a href="/about.html">about</a></li>
                     </ul>
                 </nav>
             </header>

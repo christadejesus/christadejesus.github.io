@@ -14,30 +14,41 @@
       <title>ChristaDeJesus.github.io | Portfolio</title>
       <script src="components/header.js" type="text/javascript" defer></script>
       <script src="components/footer.js" type="text/javascript" defer></script>
-      <script src="./components/caseCards.js" type="text/javascript" defer></script>    
-      <script src="./components/projectCards.js" type="text/javascript" defer></script>        
-      <script src="./components/galleryCards.js" type="text/javascript" defer></script>        
+      <script src="components/banner.js" type="text/javascript" defer></script>
+      <script src="components/cards/caseCards.js" type="text/javascript" defer></script>    
+      <script src="components/cards/projectCards.js" type="text/javascript" defer></script>        
+      <script src="components/cards/galleryCards.js" type="text/javascript" defer></script>        
     </head>
 
-  <body>
+  <body id="top">
     <header-component></header-component>
     <main>
-      <header class="banner">
-        <h1>Portfolio</h1>
-        <p>coming soon</p>
-      </header>
+      <banner-component></banner-component>
+      <div class="tabs-container">
+        <ul class="tabs">
+          <li><a href="#webDevelopment">web development</a></li>
+          <li><a href="#informationTechnology">information technology</a></li>
+          <li><a href="#designAndGraphics">design & graphics</a></li>
+        </ul>
+      </div>
       <section class="content-area">
         <article>
-          <h2>Development Projects</h2>
+          <h2 class="uppercase normal" id="webDevelopment">Web Development</h2>
+          <div class="divider accent-2"></div>
           <div class="project-card-container" id="development"></div>
+          <a href="#top" class="backToTop">Back to top</a>
         </article>
         <article>
-          <h2>IT Projects</h2>
+          <h2 class="uppercase normal" id="informationTechnology">Information Technology</h2>
+          <div class="divider accent-2"></div>
           <div class="project-card-container" id="it"></div>
+          <a href="#top" class="backToTop">Back to top</a>
         </article>
         <article>
-          <h2>Design Projects</h2>
+          <h2 class="uppercase normal" id="designAndGraphics">Design & Graphics</h2>
+          <div class="divider accent-2"></div>
           <div class="project-card-container" id="design"></div>
+          <a href="#top" class="backToTop">Back to top</a>
         </article>
       </section>
     </main>

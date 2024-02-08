@@ -1,7 +1,7 @@
 const designData = [
     { "name": "Image Editing & Enhancement", "url": "", "img": "itProject4.png" },
     { "name": "Scalable Vector Graphics", "url": "", "img": "itProject4.png" },
-    { "name": "Social Media Graphics", "url": "", "img": "itProject4.png" },
+    { "name": "Photography & Digital Art", "url": "", "img": "itProject4.png" },
 ];
 
 function createGalleryCards(containerId, data) {

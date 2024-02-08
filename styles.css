@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* RESET */
 * {
   margin: 0;
@@ -5,6 +7,7 @@
   box-sizing: border-box;
   border: none;
   scroll-behavior: smooth;
+  scroll-margin-top: 90px;
 }
 
 :root {
@@ -31,6 +34,7 @@
   /* OTHER VARIABLES */
   --topnav-height: 70px;
   --transition: all 200ms ease-in-out;
+  --transition-slow: all 400ms ease-in-out;
   --box-shadow-sm: 0px 4px 12px rgba(0,0,0,.5);
   --box-shadow-md: 0px 6px 14px rgba(0,0,0,.4);
 }
@@ -44,12 +48,13 @@ body {
   font-family: var(--sans-serif);
   color: var(--neutral-dk);
 }
-
+main {
+  margin-top: var(--topnav-height);
+}
 /* LINKS & BUTTONS */
 a {
   text-decoration: none;
   color: var(--primary);
-  font-weight: 600;
 }
 a:hover {
   text-decoration: underline;
@@ -70,6 +75,10 @@ button {
 .btn:hover {
   transform: scale(108%);
 }
+.backToTop {
+  display: block;
+  padding: 1rem;
+}
 
 /* COLOR CLASSES */
 .primary {
@@ -88,6 +97,30 @@ button {
   background: var(--accent-4);
 }
 
+/* FONT CLASSES*/
+.uppercase {
+  text-transform: uppercase;
+}
+.thin {
+  font-weight: 200;
+}
+.normal {
+  font-weight: 400;
+}
+.strong {
+  font-weight: 600;
+}
+.stronger {
+  font-weight: 800;
+}
+
+/* DESIGN ELEMENTS*/
+.divider {
+  height: 6px;
+  width: 40px;
+  margin: 0 0 4rem 0;
+}
+
 /* STRUCTURE & POSITIONING */
 
 .content-area {
@@ -97,13 +130,13 @@ button {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem 2rem;
 }
 .content-area:first-of-type{
-  margin-top: 4rem;
+  padding-top: 8rem;
 }
 .content-area:last-of-type{
-  margin-bottom: 4rem;
+  padding-bottom: 8rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -132,17 +165,7 @@ button {
   font-size: 4rem;
 }
 
-/* PAGE BANNERS */
-.banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 300px;
-  color: var(--neutral-lt);
-  background: var(--primary);
-}
+
 /* PORTFOLIO */
 .project-card-container {
   display: grid;
@@ -167,7 +190,7 @@ button {
   object-fit: cover;
   height: 100%;
   width: 100%;
-  transition: all 300ms ease-in-out;
+  transition: var(--transition-slow);
   z-index: 1;
 }
 .project-card:hover .project-img {
@@ -215,4 +238,32 @@ button {
     font-size: 1.6rem;
     padding: 1rem;
   }
+}
+
+.tabs-container {
+  width: 100%;
+  margin-top: 2px;
+}
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  gap: 2px;
+  list-style-type: none;
+  text-align: center;
+}
+.tabs li {
+  background: var(--neutral-dk);
+  width: 100%;
+  padding: 2rem;
+}
+.tabs li:hover {
+  background: var(--primary);
+}
+.tabs a {
+  color: var(--neutral-lt);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.tabs a:hover {
+  text-decoration: none;
 }
