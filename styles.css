@@ -150,7 +150,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   width: 100%;
   height: calc(100vh - (var(--topnav-height)*2));
   color: var(--neutral-lt);
@@ -164,6 +164,126 @@ button {
   font-size: 4rem;
 }
 
+/* SMILEY */
+.smiley-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.smiley {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+.smiley-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(rgb(255, 233, 135) 20%, var(--primary-2), orange);
+  z-index: 10;
+}
+.eyes {
+  display: flex;
+  gap: 1.6rem;
+  animation: blink 10s infinite linear;
+}
+.eye {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.2px;
+  padding-left: 3px;
+  padding-bottom: 4px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #000;
+}
+.highlight {
+  border-radius: 50%;
+  background: var(--neutral-lt);
+}
+.highlight-lg {
+  height: 5px;
+  width: 5px;
+}
+.highlight-sm {
+  margin-left: 1px;
+  height: 2px;
+  width: 2px;
+}
+@keyframes blink {
+  0%,
+  20%,
+  22%,
+  73%,
+  75%,
+  100% {
+    transform: scaleY(1);
+  }
+  21%,
+  74% {
+    transform: scaleY(0.1);
+  }
+}
+.mouth {
+  width: 16px;
+  height: 8px;
+  background: #000;
+  border-radius: 0 0 30px 30px;
+}
+@keyframes wave {
+  0%,
+  25%,
+  35%,
+  45%,
+  55%,
+  100% {
+    transform: rotate(-45deg);
+  }
+  30%,
+  40%,
+  50% {
+    transform: rotate(-110deg);
+  }
+}
+.arm {
+  width: 20px;
+  height: 40px;
+  background: radial-gradient(rgb(255, 233, 135) 5%, var(--primary-2), orange);
+  margin-top: 24px;
+  border-radius: 0 0 30px 30px;
+}
+.armL {
+  transform: rotate(-40deg);
+  margin-left: -14px;
+  animation: wave 10s infinite linear;
+}
+.armR {
+  transform: rotate(40deg);
+  margin-right: -14px;
+}
+.shadow {
+  height: 20px;
+  width: 180px;
+  margin-top: -2.8rem;
+  border-radius: 50%;
+  background: radial-gradient(
+    #000,
+    rgba(0,0,0,.3),
+    var(--neutral-dkdk)
+  );
+  filter: blur(3px);
+}
 
 /* PORTFOLIO */
 .project-card-container {

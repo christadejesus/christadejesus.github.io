@@ -89,7 +89,7 @@ class Banner extends HTMLElement {
                 <div class="banner-content">
                     <div class="banner-text">
                         <h1><span>Hello, World.</span><span>I'm Christa.</span></h1>
-                        <p>I love building, creating, and solving problems with technology, and enjoy learning to keep it secure and running smoothly along the way.</p>
+                        <p>I enjoy building, creating, and solving problems with technology, and love the challenge of keeping all the moving parts running smoothly along the way.</p>
                     </div>
                     <div class="banner-social">
                         <h2 class="normal">Join me on...</h2>
