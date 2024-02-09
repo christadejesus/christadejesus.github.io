@@ -53,6 +53,7 @@ body {
 main {
   margin-top: var(--topnav-height);
 }
+
 /* LINKS & BUTTONS */
 a {
   text-decoration: none;
@@ -119,6 +120,12 @@ button {
   width: 40px;
   margin: 0 0 4rem 0;
 }
+hr {
+  height: 1px;
+  width: 100%;
+  background: var(--neutral-mddk);
+  margin: 8rem 0 4rem 0;
+}
 
 /* STRUCTURE & POSITIONING */
 
@@ -152,9 +159,9 @@ button {
   justify-content: center;
   gap: 4rem;
   width: 100%;
-  height: calc(100vh - (var(--topnav-height)*2));
+  height: calc(100vh - var(--topnav-height));
   color: var(--neutral-lt);
-  background: var(--neutral-dkdk);
+  background: linear-gradient(var(--neutral-dkdk), var(--neutral-dk));
 }
 .hero h1, .hero p {
   margin: 0;
@@ -163,8 +170,43 @@ button {
 .hero h1 {
   font-size: 4rem;
 }
+.hero-footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 1.4rem;
+  opacity: .5;
+}
 
 /* SMILEY */
+@keyframes blink {
+  0%,
+  15%,
+  17%,
+  68%,
+  70%,
+  100% {
+    transform: scaleY(1);
+  }
+  16%,
+  69% {
+    transform: scaleY(0.1);
+  }
+}
+@keyframes wave {
+  0%,
+  25%,
+  35%,
+  45%,
+  55%,
+  100% {
+    transform: rotate(-45deg);
+  }
+  30%,
+  40%,
+  50% {
+    transform: rotate(-110deg);
+  }
+}
 .smiley-container {
   display: flex;
   flex-direction: column;
@@ -221,40 +263,12 @@ button {
   height: 2px;
   width: 2px;
 }
-@keyframes blink {
-  0%,
-  20%,
-  22%,
-  73%,
-  75%,
-  100% {
-    transform: scaleY(1);
-  }
-  21%,
-  74% {
-    transform: scaleY(0.1);
-  }
-}
+
 .mouth {
   width: 16px;
   height: 8px;
   background: #000;
   border-radius: 0 0 30px 30px;
-}
-@keyframes wave {
-  0%,
-  25%,
-  35%,
-  45%,
-  55%,
-  100% {
-    transform: rotate(-45deg);
-  }
-  30%,
-  40%,
-  50% {
-    transform: rotate(-110deg);
-  }
 }
 .arm {
   width: 20px;
@@ -266,7 +280,7 @@ button {
 .armL {
   transform: rotate(-40deg);
   margin-left: -14px;
-  animation: wave 10s infinite linear;
+  animation: wave 6s infinite linear;
 }
 .armR {
   transform: rotate(40deg);
@@ -378,3 +392,120 @@ button {
 .tabs-container a:hover {
   text-decoration: none;
 }
+
+/* ABOUT */
+.about {
+  text-align: center;
+}
+.about .divider {
+  margin: 0 auto 4rem auto;
+}
+.about ul {
+  list-style-type: none;
+}
+
+.about-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.about-social-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.about-social-links li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+.about-social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;               
+  font-size: 2.6rem;
+  color: var(--neutral-lt);
+  background: var(--neutral-dkdk);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: var(--transition);
+}
+.about-links a:hover {
+  text-decoration: none;
+  color: var(--neutral-lt);
+}
+@media screen and (min-width: 750px) {
+  .about-social-links li {
+    font-size: inherit;
+  }
+  .about-social-links a {
+    font-size: 3.4rem;
+    width: 50px;
+    height: 50px;  
+}
+}
+
+/* ABOUT BANNER */
+.about-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: var(--neutral-lt);
+  background: var(--neutral-dkdk);
+  padding: 6rem 4rem;
+}
+.about-banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.about-banner h1 {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.about-banner h1 span:first-child {
+  font-weight: 300;
+  color: var(--primary-3);
+}
+.about-banner h1 span:nth-child(2) {
+  font-weight: 800; 
+}
+.slide {
+  display: none;
+}
+.slide-active {
+  display: block;
+}
+.dots {
+  display: flex;
+  gap: 2rem;
+  width: fit-content;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: var(--neutral-lt);
+  opacity: .5;
+  cursor: pointer;
+}
+.dot-active {
+  opacity: 1;
+}
+@media screen and (min-width: 900px) {
+.about-banner {
+  padding: 10rem 4rem;
+}
+} 

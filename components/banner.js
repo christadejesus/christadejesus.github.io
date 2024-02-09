@@ -95,8 +95,8 @@ class Banner extends HTMLElement {
                         <h2 class="normal">Join me on...</h2>
                         <div class="banner-links">
                             <a href="https://github.com/christadejesus" target="_blank" rel="noopener noreferrer"><i class="ri-github-line"></i></a>
-                            <a href="https://facebook.com/christa.dejesus" target="_blank" rel="noopener noreferrer"><i class="ri-facebook-line"></i></i></a>
-                            <a href="https://codepen.io/christadejesus" target="_blank" rel="noopener noreferrer"><i class="ri-codepen-line"></i></i></a>
+                            <a href="https://facebook.com/christa.dejesus" target="_blank" rel="noopener noreferrer"><i class="ri-facebook-line"></i></a>
+                            <a href="https://codepen.io/christadejesus" target="_blank" rel="noopener noreferrer"><i class="ri-codepen-line"></i></a>
                         </div>
                     </div>
                 </div>

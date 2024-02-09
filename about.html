@@ -7,34 +7,72 @@
       <meta name="description" content="ChristaDeJesus.github.io">
       <link rel="icon" type="image/png" sizes="32x32" href="">
       <link rel="stylesheet" href="styles.css" />
+      <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>     
       <title>ChristaDeJesus.github.io | About</title>
       <script src="components/header.js" type="text/javascript" defer></script>
       <script src="components/footer.js" type="text/javascript" defer></script>
-   </head>
+      <script src="index.js" type="text/javascript" defer></script>
+    </head>
 
   <body>
     <header-component></header-component>
-    <main>
+    <main class="about">
+      <header class="about-banner">
+        <div class="about-banner-content">
+            <h1><span>About</span> <span>The Techie</span></h1>
+            <div class="slide-container">
+                <p class="slide slide-active" id="slide-1">Slide 1 text.</p>
+                <p class="slide" id="slide-2">Slide 2 text.</p>
+                <p class="slide" id="slide-3">Slide 3 text.</p>
+            </div>
+            <div class="dots">
+                <div class="dot dot-active" id="dot-1" onclick="handleSlide(1)"></div>
+                <div class="dot" id="dot-2" onclick="handleSlide(2)"></div>
+                <div class="dot" id="dot-3" onclick="handleSlide(3)"></div>
+            </div>
+        </div>
+    </header>
       <section class="content-area">
-        <p>coming soon</p>
-        <!--<article>
-            <h2>Meet Christa</h2>
-            <p>coming soon</p>
-          </article>
         <article>
-          <h2>Favorite Tools</h2>
-          <p>coming soon</p>
+          <h2 class="uppercase normal">Favorite Tools</h2>
+          <div class="divider primary-2"></div>
+          <ul class="about-tools">
+            <li><img src="https://img.shields.io/badge/html5-081929?style=for-the-badge&logo=html5&logoColor=f06c3b" /></li>
+            <li><img src="https://img.shields.io/badge/css3-081929?style=for-the-badge&logo=css3&logoColor=3c98d7"/></li>
+            <li><img src="https://img.shields.io/badge/javascript-081929?style=for-the-badge&logo=javascript&logoColor=fbc857"/></li>
+            <li><img src="https://img.shields.io/badge/python-081929?style=for-the-badge&logo=python&logoColor=3c98d7"/></li>
+            <li><img src="https://img.shields.io/badge/markdown-081929?style=for-the-badge&logo=markdown&logoColor=skyblue"/></li>
+            <li><img src="https://img.shields.io/badge/styled--components-081929?style=for-the-badge&logo=styled-components&logoColor=pink"/></li>
+            <li><img src="https://img.shields.io/badge/-GraphQL-081929?style=for-the-badge&logo=graphql&logoColor=E10098"/></li>
+            <li><img src="https://img.shields.io/badge/react-081929?style=for-the-badge&logo=react&logoColor=00cccc"/></li>
+            <li><img src="https://img.shields.io/badge/Next-081929?style=for-the-badge&logo=next.js&logoColor=white"/></li>
+            <li><img src="https://img.shields.io/badge/vercel-081929?style=for-the-badge&logo=vercel&logoColor=white"/></li>
+            <li><img src="https://img.shields.io/badge/Visual%20Studio%20Code-081929?style=for-the-badge&logo=visual-studio-code&logoColor=9c70b0"/></li>
+            <li><img src="https://img.shields.io/badge/github-081929?style=for-the-badge&logo=github&logoColor=white"/></li>
+            <li><img src="https://img.shields.io/badge/Notion-081929?style=for-the-badge&logo=notion&logoColor=white"/></li>
+            <li><img src="https://img.shields.io/badge/Codepen-081929?style=for-the-badge&logo=codepen&logoColor=white"/></li>
+            <li><img src="https://img.shields.io/badge/Inkscape-081929?style=for-the-badge&logo=inkscape&logoColor=white"/></li>
+            <li><img src="https://img.shields.io/badge/adobe%20photoshop-081929?style=for-the-badge&logo=adobe%20photoshop&logoColor=skyblue"/></li>
+            <li><img src="https://img.shields.io/badge/Canva-081929?style=for-the-badge&logo=Canva&logoColor=00cccc"/></li>
+            <li><img src="https://img.shields.io/badge/chatGPT-081929?style=for-the-badge&logo=openai&logoColor=a4f2c2"/></li>
+          </ul>
+        <hr/>
         </article>
         <article>
-            <h2>2024 Goals</h2>
-            <p>coming soon</p>
-          </article>
-          <article>
-            <h2>Get in Touch</h2>
-            <p>coming soon</p>
-          </article> -->
+          <h2 class="uppercase normal">Get in Touch</h2>
+          <div class="divider primary-2"></div>
+          <ul class="about-social-links">
+            <li><a href="https://github.com/christadejesus" target="_blank" rel="noopener noreferrer"><i class="ri-github-line"></i></a> Github</li>
+            <li><a href="https://codepen.io/christadejesus" target="_blank" rel="noopener noreferrer"><i class="ri-codepen-line"></i></a> Codepen</li>
+            <li><a href="https://linkedin.com/in/christatech" target="_blank" rel="noopener noreferrer"><i class="ri-linkedin-line"></i></a> LinkedIn</li>
+            <li><a href="https://facebook.com/christa.dejesus" target="_blank" rel="noopener noreferrer"><i class="ri-facebook-line"></i></a> Facebook</li>            
+          </ul>
+        </article>
       </section>
-    </main>
+    </main>  
     <footer-component></footer-component>
   </body>
 </html>
