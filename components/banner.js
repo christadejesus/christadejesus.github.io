@@ -12,8 +12,8 @@ class Banner extends HTMLElement {
                     justify-content: center;
                     width: 100%;
                     color: var(--neutral-lt);
-                    background: linear-gradient(var(--primary), var(--neutral-dk));
-                    padding: 5rem 4rem 6rem 4rem;
+                    background: var(--neutral-dkdk);
+                    padding: 6rem 4rem;
                 }
                 .banner-content {
                     display: flex;
@@ -36,7 +36,7 @@ class Banner extends HTMLElement {
                 .banner h1 span:first-child {
                     font-size: 3.7rem;
                     font-weight: 300;
-                    color: var(--accent-3);
+                    color: var(--primary-3);
                 }
                 .banner h1 span:nth-child(2) {
                     font-size: 4.5rem;
@@ -58,7 +58,7 @@ class Banner extends HTMLElement {
                     justify-content: center;               
                     font-size: 3rem;
                     font-weight: 500;
-                    background: var(--accent-2);
+                    background: var(--primary-2);
                     border-radius: 50%;
                     width: 40px;
                     height: 40px;
@@ -70,6 +70,9 @@ class Banner extends HTMLElement {
                 }
 
                 @media screen and (min-width: 900px) {
+                .banner {
+                    padding: 10rem 4rem;
+                }
                 .banner-content {
                     align-items: center;
                     flex-direction: row;

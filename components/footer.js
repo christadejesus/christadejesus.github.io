@@ -13,14 +13,14 @@ class Footer extends HTMLElement {
                     flex-direction: column;
                     width: 100%;
                     height: var(--topnav-height);
-                    background: var(--primary);
+                    background: var(--neutral-dkdk);
                     color: var(--neutral-lt);
                     } 
                 .page-footer a {
                     color: inherit;
                 } 
                 .page-footer a:hover {
-                    color: var(--accent-2);
+                    color: var(--primary-2);
                     text-decoration: none;
                 }
             </style>

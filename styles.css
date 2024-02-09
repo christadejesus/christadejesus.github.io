@@ -13,19 +13,21 @@
 :root {
   /* COLORS */
   --neutral-lt: #fff;
-  --neutral-mdlt: #d9dbdf;
-  --neutral-md: #919294;
-  --neutral-mddk: #4d4e52;
-  --neutral-dk: #1d1e1f;
+  --neutral-mdlt: #dadddf;
+  --neutral-md: #969ea4;
+  --neutral-mddk: #56626D;
+  --neutral-dk: #32414e; 
+  --neutral-dkdk: #081929;
 
-  --primary: #2f323a;
-  --accent-1: #FF7077;
-  --accent-2: rgb(255, 176, 103);
-  --accent-3: #ACEEF3;
-  --accent-4: #ffe9e4;
+  --primary-1: #FF7177;
+  --primary-2: #feb066;
+  --primary-3: #ACEEF4;
+  --primary-4: #ffe9e4;
 
-  --overlay-primary-1: rgba(47, 50, 58, .8);
-  --overlay-accent-2: rgba(255, 176, 103, .8);
+  --overlay-dark-lt: rgba(8, 25, 41, .5);
+  --overlay-dark-dk: rgba(8, 25, 41, .8);
+  --overlay-light: rgba(255, 255, 255, .5);
+  --overlay-primary-2: rgba(254, 176, 102.5, );
   
   /* FONTS */
   --sans-serif: "Montserrat", sans-serif;
@@ -54,7 +56,7 @@ main {
 /* LINKS & BUTTONS */
 a {
   text-decoration: none;
-  color: var(--primary);
+  color: var(--neutral-dkdk);
 }
 a:hover {
   text-decoration: underline;
@@ -81,20 +83,17 @@ button {
 }
 
 /* COLOR CLASSES */
-.primary {
-  background: var(--primary);
+.primary-1 {
+  background: var(--primary-1);
 }
-.accent-1 {
-  background: var(--accent-1);
+.primary-2 {
+  background: var(--primary-2);
 }
-.accent-2 {
-  background: var(--accent-2);
+.primary-3 {
+  background: var(--primary-3);
 }
-.accent-3 {
-  background: var(--accent-3);
-}
-.accent-4 {
-  background: var(--accent-4);
+.primary-4 {
+  background: var(--primary-4);
 }
 
 /* FONT CLASSES*/
@@ -155,7 +154,7 @@ button {
   width: 100%;
   height: calc(100vh - (var(--topnav-height)*2));
   color: var(--neutral-lt);
-  background: var(--primary);
+  background: var(--neutral-dkdk);
 }
 .hero h1, .hero p {
   margin: 0;
@@ -175,46 +174,45 @@ button {
 }
 .project-card {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 350px;
-  background: var(--neutral-mdlt);
-  padding: 2rem;
   border-radius: 12px; 
   overflow: hidden;
   box-shadow: var(--box-shadow-md);
 }
+.project-card a {
+  color: var(--neutral-lt);
+}
 .project-img {
   position: absolute;
+  bottom: 0;
+  left: 0;
   object-fit: cover;
   height: 100%;
   width: 100%;
   transition: var(--transition-slow);
   z-index: 1;
 }
-.project-card:hover .project-img {
-  height: 120%;
-  width: 120%;
-  opacity: 80%;
-}
-.project-card-label {
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  background: var(--neutral-lt);
-  font-weight: 500;
-  border-radius: 8px;
-  padding: 4rem 2rem;
-  z-index: 10;
-  box-shadow: var(--box-shadow-sm);
-}
-.project-card-label h3 {
+  background: var(--overlay-dark-dk);
+  font-size: 1.6rem;
   text-align: center;
+  padding: 2rem;
+  cursor: pointer;
+  z-index: 10;
 }
-.project-card-label a:hover {
+.project-card:hover .project-img {
+  transform: scale(120%);
+}
+.project-card:hover a {
+  color: var(--primary-3);
   text-decoration: none;
 }
 
@@ -225,45 +223,38 @@ button {
   .project-card {
     height: 250px;
   }
-  .project-card-label {
+  .project-overlay {
     font-size: 1.4rem;
-    padding: 1rem;
   }
 }
-@media screen and (min-width: 900px) {
-  .project-card {
-    padding: 2rem 10%;
-  }
-  .project-card-label {
-    font-size: 1.6rem;
-    padding: 1rem;
-  }
-}
-
+/* PROJECT TABS */
 .tabs-container {
   width: 100%;
   margin-top: 2px;
 }
-.tabs {
-  display: flex;
-  justify-content: space-around;
+.tabs-container ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2px;
   list-style-type: none;
   text-align: center;
 }
-.tabs li {
-  background: var(--neutral-dk);
+.tabs-container ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 2rem;
+  background: var(--neutral-dkdk);
 }
-.tabs li:hover {
-  background: var(--primary);
+.tabs-container ul li:hover {
+  background: var(--neutral-dk);
 }
-.tabs a {
+.tabs-container a {
   color: var(--neutral-lt);
   font-weight: 400;
   font-size: 1.6rem;
 }
-.tabs a:hover {
+.tabs-container a:hover {
   text-decoration: none;
 }

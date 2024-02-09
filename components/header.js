@@ -14,7 +14,7 @@ class Header extends HTMLElement {
                     justify-content: center;
                     width: 100%;
                     height: var(--topnav-height);
-                    background: var(--primary);
+                    background: var(--neutral-dkdk);
                     padding: 0 10%;
                     z-index: 1000;
                 }
@@ -38,7 +38,7 @@ class Header extends HTMLElement {
                     color: var(--neutral-lt);
                 }
                 .topnav-link a:hover {
-                    color: var(--accent-3);
+                    color: var(--primary-3);
                     text-decoration: none;
                 }  
             

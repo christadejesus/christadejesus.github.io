@@ -11,13 +11,12 @@ function createCaseCards(containerId, data) {
         const card = document.createElement("div");
         card.classList.add("project-card");
         card.innerHTML = `
-            <img src="./assets/${project.img}" class="project-img"/>
-            <div class="project-card-label">
-                <h3>${project.name}</h3>
-                <p>
-                    <a href="${project.url}" target="_blank">Case Study <i class="ri-arrow-right-line"></i></a>
-                </p>
+            <div class="project-overlay">
+                <a href="${project.url}" target="_blank">
+                    <h3>${project.name}</h3>
+                </a>
             </div>
+            <img src="./assets/${project.img}" class="project-img"/>
         `;
         container.appendChild(card);
     });
