@@ -1,4 +1,4 @@
-class Header extends HTMLElement {
+class TopNav extends HTMLElement {
     constructor() {
       super();
     }
@@ -19,40 +19,29 @@ class Header extends HTMLElement {
                     z-index: 1000;
                 }
                 .topnav {
-                   width: 100%; 
-                }
-                .topnav-links {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     width: 100%;
                     max-width: 800px;
-                    list-style-type: none;
-                    margin: 0 auto;
                 }
-                .topnav-link a {                  
+                .topnav a {                  
                     transition: var(--transition);
-                    font-size: 1.6rem;
-                    letter-spacing: 1.5;
-                    text-transform: lowercase;
                     color: var(--neutral-lt);
                 }
-                .topnav-link a:hover {
+                .topnav a:hover {
                     color: var(--primary-3);
-                    text-decoration: none;
                 }  
             
             </style>
             <header class="topnav-container" id="top">
                 <nav class="topnav">
-                    <ul class="topnav-links">
-                        <li class="topnav-link"><a href="/index.html">home</a></li>
-                        <li class="topnav-link"><a href="/portfolio.html">portfolio</a></li>
-                        <li class="topnav-link"><a href="/about.html">about</a></li>
-                    </ul>
+                    <a href="/index.html">home</a>
+                    <a href="/portfolio.html">portfolio</a>
+                    <a href="/about.html">about</a>
                 </nav>
             </header>
         `;
       }
     }
-  customElements.define('header-component', Header);
+  customElements.define('topnav-component', TopNav);

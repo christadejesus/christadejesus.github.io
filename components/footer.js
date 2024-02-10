@@ -21,7 +21,6 @@ class Footer extends HTMLElement {
                 } 
                 .page-footer a:hover {
                     color: var(--primary-2);
-                    text-decoration: none;
                 }
             </style>
             <footer class="page-footer">

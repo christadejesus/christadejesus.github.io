@@ -4,6 +4,18 @@ const developmentData = [
     { "name": "Project 3", "demoUrl": "", "codeUrl": "", "img": "itProject4.png" },
 ];
 
+const itData = [
+    { "name": "Cybersecurity Enhancement", "url": "", "img": "itProject1.png" },
+    { "name": "Laptop Password Recovery", "url": "", "img": "itProject2.png" },
+    { "name": "Laptop Screen Replacement", "url": "", "img": "itProject3.png" },
+];
+
+const designData = [
+    { "name": "Image Editing & Enhancement", "url": "", "img": "itProject4.png" },
+    { "name": "Scalable Vector Graphics (SVG)", "url": "", "img": "itProject4.png" },
+    { "name": "Photography & Digital Art", "url": "", "img": "itProject4.png" },
+];
+
 function createProjectCards(containerId, data) {
     const container = document.getElementById(containerId);
 
@@ -21,3 +33,5 @@ function createProjectCards(containerId, data) {
 }
 
 createProjectCards("development", developmentData);
+createProjectCards("it", itData);
+createProjectCards("design", designData);
