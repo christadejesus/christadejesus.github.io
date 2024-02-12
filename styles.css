@@ -56,6 +56,16 @@ main {
 ul {
   list-style-type: none;
 }
+blockquote {
+  padding: 2rem;
+  border-left: 6px solid var(--neutral-md);
+  background: var(--neutral-mdlt);
+}
+.block-info {
+  display:flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
 /* LINKS & BUTTONS */
 a {
   text-decoration: none;
@@ -118,7 +128,7 @@ button {
   font-weight: 400;
 }
 .strong {
-  font-weight: 600;
+  font-weight: 500;
 }
 .stronger {
   font-weight: 800;
