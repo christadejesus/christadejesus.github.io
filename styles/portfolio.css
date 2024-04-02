@@ -58,46 +58,25 @@
     margin: 2rem 0 4rem 0;
   }
   .project-card {
-    position: relative;
     height: 350px;
     border-radius: 12px; 
     overflow: hidden;
     box-shadow: var(--box-shadow-md);
   }
-  .project-card a {
-    color: var(--neutral-lt);
+  .project-link {
+    display: block;
+    height: 100%;
   }
   .project-img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     object-fit: cover;
+    object-position: center;
     height: 100%;
     width: 100%;
     transition: var(--transition-slow);
-    z-index: 1;
   }
-  .project-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: var(--overlay-dark-dk);
-    font-size: 1.6rem;
-    text-align: center;
-    padding: 2rem;
-    cursor: pointer;
-    z-index: 10;
-  }
+  
   .project-card:hover .project-img {
     transform: scale(120%);
-  }
-  .project-card:hover a {
-    color: var(--primary-3);
   }
   
   @media screen and (min-width: 750px) {
@@ -106,9 +85,6 @@
     }
     .project-card {
       height: 250px;
-    }
-    .project-overlay {
-      font-size: 1.4rem;
     }
   }
   /* PROJECT TABS */
