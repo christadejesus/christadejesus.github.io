@@ -1,3 +1,7 @@
+function showMenu() {
+    document.getElementById("links-container").classList.toggle("show");
+}
+
 class TopNav extends HTMLElement {
     constructor() {
       super();
@@ -5,40 +9,98 @@ class TopNav extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <style>
-                .topnav-container {
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    height: var(--topnav-height);
-                    background: var(--neutral-dkdk);
-                    padding: 0 10%;
-                    z-index: 1000;
-                }
                 .topnav {
+                    position: relative;                
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    gap: 1rem;
+                    height: var(--topnav-height);
+                    z-index: 1000;
+                }
+
+                .topnav .text {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+                .topnav .name {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: var(--display);
+                    text-transform: uppercase;
+                    font-size: 3rem;
+                    font-weight: 500;
+                    line-height: var(--line-height-xsm);
+                }
+                .links-container {
+                    position: absolute;
+                    top: var(--topnav-height);
+                    right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 2rem;
+                    background: var(--neutral-dkdk);
+                    overflow: hidden;
+                    height: 0;
+                    width: 0;
+                    transition: all ease-in-out 300ms;
+                }
+                .show {
+                    padding: 4rem 2rem 8rem 2rem;
+                    height: unset;
                     width: 100%;
-                    max-width: 800px;
                 }
-                .topnav a {                  
-                    transition: var(--transition);
+                .nav-link {
                     color: var(--neutral-lt);
+                    font-family: var(--comic);
+                    font-size: 2.6rem;
                 }
-                .topnav a:hover {
+                .nav-link:hover {
                     color: var(--primary-3);
-                }  
-            
+                }
+                .social-links-container {
+                    display: flex;
+                    gap: 1rem;
+                    margin-top: 4rem;
+                }
+                .social-link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 3rem;
+                    background: var(--neutral-lt);
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+                .social-link:hover {
+                    background: var(--primary-2-lt);
+                }
+                @media screen and (min-width: 550px) {
+                    .topnav .name {
+                        font-size: 3rem;
+                    }
             </style>
-            <header class="topnav-container" id="top">
-                <nav class="topnav">
-                    <a href="/index.html">home</a>
-                    <a href="/portfolio.html">portfolio</a>
-                    <a href="/about.html">about</a>
+
+            <header class="topnav">
+                <div class="text">
+                    <p class="name"><span>Christa</span><span>DeJesus</span></p>
+                </div>
+                <div>
+                    <button class="btn btn-dk btn-sm" onclick="showMenu()">Contents</button>
+                </div>
+                <nav class="links-container" id="links-container">
+                    <a href="/" class="nav-link">home</a>
+                    <a href="/about.html" class="nav-link">about</a>
+                    <a href="/projects.html" class="nav-link">projects</a>
+                    <a href="/gallery.html" class="nav-link">gallery</a>
+                    <div class="social-links-container">
+                        <a href="https://github.com/christadejesus" class="social-link" target="_blank" rel="noopener noreferrer"><i class="ri-github-line"></i></a>
+                        <a href="https://codepen.io/christadejesus" class="social-link" target="_blank" rel="noopener noreferrer"><i class="ri-codepen-line"></i></a>
+                        <a href="https://linkedin.com/in/christatech" class="social-link" target="_blank" rel="noopener noreferrer"><i class="ri-linkedin-line"></i></a>
+                    </div>
                 </nav>
             </header>
         `;

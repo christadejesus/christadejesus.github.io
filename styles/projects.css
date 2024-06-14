@@ -1,0 +1,33 @@
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6rem;
+  border: none;
+}
+.project-card {
+  border: var(--border-comic);
+}
+.img-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project-card img {
+  max-width: 250px;
+  padding: 2rem 2rem 4rem;
+}
+.project-details {
+  line-height: 1.2;
+  background: var(--primary-2-lt);
+  width: 100%;
+  padding: 2rem;
+  border-top: var(--border-comic);
+}
+@media screen and (min-width: 600px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+

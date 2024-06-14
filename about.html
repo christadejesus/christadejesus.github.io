@@ -12,55 +12,32 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
     rel="stylesheet"
 />     
-      <title>ChristaDeJesus.github.io | About</title>
       <script src="components/topnav.js" type="text/javascript" defer></script>
       <script src="components/footer.js" type="text/javascript" defer></script>
-      <script src="index.js" type="text/javascript" defer></script>
+      <title>ChristaDeJesus.github.io | About</title>
     </head>
 
   <body>
-    <topnav-component></topnav-component>
     <main class="about">
-      <header class="banner">
-        <div class="banner-content">
-            <h1><span>A bit of</span><span>my story</span></h1>
-            <div class="slide-container">
-                <div class="slide slide-active" id="slide-1">
-                  <i class="ri-arrow-right-s-line arrow transparent"></i>
-                  <p>In 2020, I set out to teach myself <em>a bit of code</em> to enhance a no-code website. By the end of my first online course, I'd discovered a new passion and was totally hooked.</p>
-                  <i class="ri-arrow-right-s-line arrow" onclick="handleArrow(2)"></i>
-                </div>
-                <div class="slide" id="slide-2">
-                  <i class="ri-arrow-left-s-line arrow" onclick="handleArrow(1)"></i>
-                  <p>I continued on, learning about development and design, exploring various tools and technology, and building on a love of tech that began during my years as a professional photographer and entrepreneur.</p>
-                  <i class="ri-arrow-right-s-line arrow" onclick="handleArrow(3)"></i>
-                </div>
-                <div class="slide" id="slide-3">
-                  <i class="ri-arrow-left-s-line arrow" onclick="handleArrow(2)"></i>
-                  <p>Now in 2024, I'm bringing all that I've learned to the table, continuing to grow as a developer, strengthening my Information Technology skills, and moving ahead toward a career in tech.</p>
-                  <i class="ri-arrow-right-s-line arrow" onclick="handleArrow(4)"></i>
-                </div>
-                <div class="slide" id="slide-4">
-                  <i class="ri-arrow-left-s-line arrow" onclick="handleArrow(3)"></i>
-                  <div>
-                    <p>It's an exciting time! Want to share the transition to tech journey? Have a project or position and think my skills may be a good fit?</p>
-                    <a href="#connect" class="btn primary-2">Let's connect!</a>
-                  </div>
-                <i class="ri-arrow-left-s-line arrow transparent"></i>
-              </div>
-            </div>
-            <div class="dots">
-                <div class="dot dot-active" id="dot-1" onclick="handleDot(1)"></div>
-                <div class="dot" id="dot-2" onclick="handleDot(2)"></div>
-                <div class="dot" id="dot-3" onclick="handleDot(3)"></div>
-                <div class="dot" id="dot-4" onclick="handleDot(4)"></div>
-            </div>
+      <topnav-component></topnav-component>  
+      <section class="banner-container">
+        <div class="narration">
+          <p>...As the morning sunlight peeks through the window and her pup falls gently back to sleep, she takes a sip of coffee and eagerly types...</p>
         </div>
-    </header>
-      <section class="content-area">
-        <article>
-          <h2 class="uppercase normal">My Favorite Tools</h2>
-          <div class="divider primary-2"></div>
+        <img class="banner-img" src="./assets/comic_home_office.png" alt="" />
+        <div class="img-overlay">&copy;2024 Christa DeJesus.</div>
+        <div class="banner-text">
+          <p class="comic-bubble">...npm run dev.</p>
+        </div>
+       </section>       
+      <section class="intro">
+        <h1 class="hidden">About</h1>
+        <p><strong>Hello, friends!</strong> My name is Christa, and I'm a self-taught web developer and designer in Indianapolis, IN. In May of 2024, I earned my CompTIA A+ certification, so I'm officially an Information Technology techie, too.</p>
+        <p>I hope you enjoy this portfolio website and take a moment to check out my <a href="/projects.html">Projects</a> page and design <a href="/gallery.html">Gallery</a>. I'd love to connect and hear your feedback, so don't forget to join me on social media. Let's talk tech! 😊</p>
+      </section>
+      <section class="comic-box" style="background-color: var(--primary-3-lt);">
+        <h2 class="comic-heading" >My Favorite Tools</h2>
+        <div class="comic-content" >
           <ul class="about-tools">
             <li><img src="https://img.shields.io/badge/html5-081929?style=for-the-badge&logo=html5&logoColor=f06c3b" /></li>
             <li><img src="https://img.shields.io/badge/css3-081929?style=for-the-badge&logo=css3&logoColor=3c98d7"/></li>
@@ -81,17 +58,24 @@
             <li><img src="https://img.shields.io/badge/Canva-081929?style=for-the-badge&logo=Canva&logoColor=00cccc"/></li>
             <li><img src="https://img.shields.io/badge/chatGPT-081929?style=for-the-badge&logo=openai&logoColor=a4f2c2"/></li>
           </ul>
-        <hr/>
-        </article>
-        <article id="connect">
-          <h2 class="uppercase normal">Connect online</h2>
-          <div class="divider primary-2"></div>
-          <ul class="about-social-links">
-            <li><a href="https://github.com/christadejesus" target="_blank" rel="noopener noreferrer"><i class="ri-github-line"></i></a> Github</li>
-            <li><a href="https://codepen.io/christadejesus" target="_blank" rel="noopener noreferrer"><i class="ri-codepen-line"></i></a> Codepen</li>
-            <li><a href="https://linkedin.com/in/christatech" target="_blank" rel="noopener noreferrer"><i class="ri-linkedin-line"></i></a> LinkedIn</li>
-          </ul>
-        </article>
+        </div>
+        <img class="comic-box-img" src="./assets/dots_small_square.svg" alt=""/>
+      </section>
+      <section class="comic-box accent primary-2-lt">
+        <div class="accent-content">
+          <p>#1 Dev Fav: React</p>
+          <i class="ri-reactjs-fill react"></i>
+        </div>
+        <img class="burst" src="./assets/bubble_burst_stars.svg" alt=""/>
+        <img class="dots-square" src="./assets/dots_medium_square.svg" alt=""/>
+        <div class="img-overlay">&copy;2024 Christa DeJesus.</div>
+      </section>
+      <section class="comic-box" style="background-color: var(--primary-3-lt);">
+        <div class="comic-content">
+            <h2 style="font-family: var(--display); text-transform: uppercase; font-size: 3.4rem">Want to see what I've been working on?</h2>
+            <a class="btn btn-alert" href="/projects.html">Sure, let's see those projects!</a>  
+        </div>
+        <img class="comic-box-img" src="./assets/burst_square_blk.svg" alt=""/>
       </section>
     </main>  
     <footer-component></footer-component>
