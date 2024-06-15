@@ -89,7 +89,7 @@ class TopNav extends HTMLElement {
 
             <header class="topnav">
                 <div class="text">
-                    <a class="name" href="/index.html"><span>Christa</span><span>DeJesus</span></a>
+                    <a class="name" href="/about.html"><span>Christa</span><span>DeJesus</span></a>
                 </div>
                 <div>
                     <button class="btn btn-dk btn-sm" onclick="showMenu()">Contents</button>
