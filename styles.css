@@ -25,14 +25,14 @@
   --neutral-dk: #444444; 
   --neutral-dkdk: #111;
 
-  --primary-1: #1B5299;
-  --primary-1-lt: #a1c1ec;
-  --primary-2: #17BEBB;
-  --primary-2-lt: #91dddc;
+  --primary-1: #1C529A;
+  --primary-1-lt: #59A9E4;
+  --primary-2: #18BEBC;
+  --primary-2-lt: #95EAD7;
   --primary-3: #FCBA04;
-  --primary-3-lt: #fdd565;
-  --primary-4: #96031A;
-  --primary-4-lt: #ffd0d0;
+  --primary-3-lt: #FFDB78;
+  --primary-4: #97031B;
+  --primary-4-lt: #E76F2C;
   
   /* FONTS */
   --sans-serif: "Inter", sans-serif;
@@ -112,7 +112,7 @@ a:hover {
   text-decoration: none;
 }
 p a {
-  color: var(--primary-4);
+  color: var(--primary-1);
   font-weight: 700;
 }
 p a:hover {

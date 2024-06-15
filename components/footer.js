@@ -15,6 +15,7 @@ class Footer extends HTMLElement {
                     text-align: center;
                     } 
                 .page-footer h2 {
+                    color: var(--primary-3);
                     font-weight: 400;
                 }
                 .page-footer p {

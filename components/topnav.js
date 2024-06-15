@@ -33,6 +33,9 @@ class TopNav extends HTMLElement {
                     font-weight: 500;
                     line-height: var(--line-height-xsm);
                 }
+                .topnav .name:hover {
+                    color: var(--primary-1);
+                }
                 .links-container {
                     position: absolute;
                     top: var(--topnav-height);
@@ -43,22 +46,22 @@ class TopNav extends HTMLElement {
                     gap: 2rem;
                     background: var(--neutral-dkdk);
                     overflow: hidden;
-                    height: 0;
+                    height: 100vh;
                     width: 0;
+                    padding: 4rem 0 8rem 0;
                     transition: all ease-in-out 300ms;
                 }
                 .show {
                     padding: 4rem 2rem 8rem 2rem;
-                    height: unset;
                     width: 100%;
                 }
                 .nav-link {
-                    color: var(--neutral-lt);
+                    color: var(--primary-3);
                     font-family: var(--comic);
                     font-size: 2.6rem;
                 }
                 .nav-link:hover {
-                    color: var(--primary-3);
+                    color: var(--neutral-lt);
                 }
                 .social-links-container {
                     display: flex;
@@ -76,7 +79,7 @@ class TopNav extends HTMLElement {
                     border-radius: 50%;
                 }
                 .social-link:hover {
-                    background: var(--primary-2-lt);
+                    background: var(--primary-2);
                 }
                 @media screen and (min-width: 550px) {
                     .topnav .name {
@@ -86,7 +89,7 @@ class TopNav extends HTMLElement {
 
             <header class="topnav">
                 <div class="text">
-                    <p class="name"><span>Christa</span><span>DeJesus</span></p>
+                    <a class="name" href="/index.html"><span>Christa</span><span>DeJesus</span></a>
                 </div>
                 <div>
                     <button class="btn btn-dk btn-sm" onclick="showMenu()">Contents</button>
