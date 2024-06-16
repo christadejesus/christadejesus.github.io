@@ -7,6 +7,9 @@
   justify-content: center;
   gap: 1rem;
 }
+.about-tools img {
+  height: 30px;
+}
 .about-social-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -30,20 +33,6 @@
   }
   .about-social-link:hover {
     color: var(--primary-2);
-  }
-  .burst {
-    width: 100%;
-    max-width: 350px;
-    z-index: 1;
-  }
-  .dots-square {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    opacity: 20%;
-    z-index: 0;
   }
   
   @media screen and (min-width: 600px) {

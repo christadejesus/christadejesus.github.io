@@ -12,7 +12,6 @@
   margin: 6rem auto 8rem auto;
 }
 .gallery-card {
-  position: relative; /* needed for img-overlay */
   display: flex;
   align-items: center;
   justify-content: center;

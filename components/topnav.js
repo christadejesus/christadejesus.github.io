@@ -100,10 +100,11 @@ class TopNav extends HTMLElement {
                     <a href="/projects.html" class="nav-link">projects</a>
                     <a href="/gallery.html" class="nav-link">gallery</a>
                     <div class="social-links-container">
-                        <a href="https://github.com/christadejesus" class="social-link" target="_blank" rel="noopener noreferrer"><i class="ri-github-line"></i></a>
-                        <a href="https://codepen.io/christadejesus" class="social-link" target="_blank" rel="noopener noreferrer"><i class="ri-codepen-line"></i></a>
-                        <a href="https://linkedin.com/in/christatech" class="social-link" target="_blank" rel="noopener noreferrer"><i class="ri-linkedin-line"></i></a>
-                    </div>
+                        <a href="https://github.com/christadejesus" class="social-link" target="_blank" rel="noopener noreferrer"><i class="ri-github-fill"></i></a>
+                        <a href="https://codepen.io/christadejesus" class="social-link" target="_blank" rel="noopener noreferrer"><i class="ri-codepen-fill"></i></a>
+                        <a href="https://linkedin.com/in/christatech" class="social-link" target="_blank" rel="noopener noreferrer"><i class="ri-linkedin-fill"></i></a>
+                        <a href="https://facebook.com/christa.dejesus" class="social-link" target="_blank" rel="noopener noreferrer"><i class="ri-facebook-fill"></i></a> 
+                        </div>
                 </nav>
             </header>
         `;

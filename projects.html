@@ -14,6 +14,7 @@
     <title>ChristaDeJesus.github.io | Projects</title>
     <script src="components/topnav.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/gallerycta.js" type="text/javascript" defer></script>
   </head>
 
   <body id="top">
@@ -26,7 +27,6 @@
           </p>
         </div>
         <img class="banner-img" src="./assets/comic_projects_1.png" alt="" />
-        <div class="img-overlay">&copy;2024 Christa DeJesus.</div>
       </section>
       <section class="intro">
         <h1 class="hidden">Projects</h1>
@@ -43,14 +43,8 @@
           <div class="comic-content"></div>
         </article>
       </section>
-      <section class="comic-box" style="background-color: var(--primary-2);">
-        <div class="comic-content">
-            <h2 style="font-family: var(--display); text-transform: uppercase; font-size: 3.4rem">Want to see what's new in my design gallery?</h2>
-            <a class="btn btn-alert" href="/gallery.html">Abso-freakin-lutely!</a>
-          </div>
-        <img class="comic-box-img" src="./assets/burst_square_blk.svg" alt=""/>
-      </section>
-    </main>
+      <gallerycta-component></gallerycta-component>
+      </main>
     <footer-component></footer-component>
   </body>
 </html>
