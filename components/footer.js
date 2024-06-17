@@ -52,7 +52,7 @@ class Footer extends HTMLElement {
                         <a href="https://facebook.com/christa.dejesus" target="_blank" rel="noopener noreferrer"><i class="ri-facebook-fill"></i></a> 
                     </div>
                 </div>
-                <p>&copy;2024 Christa DeJesus. All images, artwork, and content are subject to copyright.</p>
+                <p>&copy;2024 Christa DeJesus. All images, artwork, and content are subject to copyright. </p>
             </footer>
         `;
       }

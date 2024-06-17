@@ -430,7 +430,11 @@ button {
   max-height: 100%;
   width: 100%;
 }
-
+.banner-credit {
+  font-size: 1.2rem;
+  margin: .3rem 0;
+  text-align: right;
+}
 @media screen and (min-width: 750px) {
   .banner-text {
       right: 15%;
