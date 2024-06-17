@@ -31,6 +31,7 @@
   --primary-2-lt: #95EAD7;
   --primary-3: #FCBA04;
   --primary-3-lt: #FFDB78;
+  --primary-3-xlt: #fff8e4;
   --primary-4: #97031B;
   --primary-4-lt: #E76F2C;
   
@@ -143,6 +144,21 @@ button {
 }
 .btn-lg {
   font-size: 2.2rem;
+}
+/* To be replaced with comic style SVG */
+.backToTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  text-align: center;
+  font-family: var(--comic);
+  margin: 2rem 0 6rem 0;
+}
+.backToTop:hover {
+  color: var(--primary-4);
 }
 
 /* COLORS*/
@@ -284,6 +300,87 @@ button {
     padding: 4rem;
   }
 }
+/* COMIC SCENES */
+.panels-container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-gap: 2rem;
+  margin: 6rem 0;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: var(--border-comic);
+}
+.panel-img {
+  max-width: 100%;
+  padding: 6rem;
+}
+.panel-img-full {
+  width: 100%;
+  height: 100%;
+}
+.panel-label {
+  background: var(--neutral-dkdk);
+  color: var(--neutral-lt);
+  font-family: var(--comic);
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+.panel-a, .panel-b {
+  grid-column: span 16;
+}
+.panel-1, .panel-2, .panel-3, .panel-4, .panel-5 {
+  grid-column: span 16;
+  grid-row: span 1;
+}
+
+@media screen and (min-width: 550px) {
+  .panel-img {
+    padding: 4rem;
+  }
+  .panel-a, .panel-b {
+    grid-column: span 8;
+  }
+  .panel-3 .panel-img {
+    max-width: 60%;
+  }
+  .panel-1, .panel-2, .panel-4, .panel-5 {
+    grid-column: span 8;
+    grid-row: span 1;
+  }
+  .panel-3 {
+    grid-column: span 16;
+  }
+}
+@media screen and (min-width: 800px) {
+  .panel-img {
+    padding: 2rem;
+  }
+  .panel-3 .panel-img {
+    max-width: 100%;
+  }
+  .panel-5 .panel-img {
+    max-width: 70%;
+  }
+  .panel-1, .panel-3 {
+    grid-column: span 5;
+    grid-row: span 1;
+  }
+  .panel-2 {
+    grid-column: span 6;
+  }
+  .panel-4, .panel-5 {
+    grid-column: span 8;
+  }
+}
+
+
 
 /* COMIC BUBBLES & DESIGN ELEMENTS */
 .comic-bubble {
@@ -320,11 +417,11 @@ button {
   position: absolute;
   top: 140px;
   right: 5%;
-  opacity: 0;
+  /*opacity: 0;
   animation-name: showBannerText;
   animation-duration: 300ms;
   animation-delay: 5s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
 }
 .banner-img {
   object-fit: cover;
@@ -339,7 +436,7 @@ button {
       right: 15%;
   }
 }
-
+/*
 @keyframes showBannerText {
   0% {
     opacity: 0;
@@ -347,4 +444,4 @@ button {
   100% {
     opacity: 1;
   }
-}
+}*/
