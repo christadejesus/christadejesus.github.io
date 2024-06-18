@@ -7,6 +7,7 @@
       <meta name="description" content="ChristaDeJesus.github.io">
       <link rel="icon" type="image/png" sizes="32x32" href="">
       <link rel="stylesheet" href="styles.css" />
+      <link rel="stylesheet" href="/styles/banner.css" />
       <link rel="stylesheet" href="/styles/about.css" />
       <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
@@ -19,26 +20,34 @@
     </head>
 
   <body>
-    <main class="about">
-      <topnav-component></topnav-component>  
-      <section class="banner">
+    <main>
+      <!-- TOPNAV -->
+      <topnav-component></topnav-component> 
+      <!-- BANNER --> 
+      <section class="banner"> 
         <div class="banner-container">
           <div class="narration">
             <p>...As the morning sunlight peeks through the window and her pup falls gently back to sleep, she takes a sip of coffee and eagerly types...</p>
           </div>
-          <img class="banner-img" src="./assets/comic_home_office.png" alt="" />
+          <div class="banner-img-container">
+            <img class="banner-img" src="./assets/comic_home_office.png" alt="" />
+          </div>
           <div class="banner-text">
             <p class="comic-bubble">...npm run dev.</p>
           </div>
-        </div>
+        </div>      
         <p class="banner-credit">Image generated with DALL&middot;E 3 and enhanced by Christa DeJesus.</p>
       </section>       
+
+      <!-- INTRO -->
       <section class="intro">
         <h1 class="hidden">About</h1>
         <h2 class="intro-heading">Hello, friends!</h2>
         <p>Thank you for stopping by my design and development portfolio. I'm Christa, a web developer, designer, and CompTIA A+ certified IT Technician in Indianapolis, IN. You can learn more about me and what I love to do below, or jump straight to the fun stuff &mdash; my <a href="/gallery.html"><strong>Gallery</strong></a> of design work, or the <a href="/projects.html"><a><strong>Projects</strong></a> page to find links to my current projects.</p>
         <p>I hope you enjoy exploring the site, and don't forget to <a href="#page-footer">join me on social media</a>. Let's connect and talk tech! 😁</p>
       </section>
+
+      <!-- MAIN CONTENT -->
       <section class="comic-box primary-3">
         <img class="comic-img" src="./assets/dots_small_square.svg" alt=""/>
         <div class="comic-overlay">
@@ -79,6 +88,8 @@
         </section>
       <projectscta-component></projectscta-component>
     </main>  
+
+    <!-- FOOTER -->
     <footer-component></footer-component>
   </body>
 </html>

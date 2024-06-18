@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="/styles/projects.css" />
+    <link rel="stylesheet" href="/styles/banner.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -19,7 +20,10 @@
 
   <body id="top">
     <main>
+      <!-- TOPNAV -->
       <topnav-component></topnav-component>
+
+      <!-- BANNER -->
       <section class="banner">
         <div class="banner-container">
           <div class="narration">
@@ -27,27 +31,47 @@
               ...Tech was her passion, but really...she just wanted to contribute to something bigger than herself &mdash; something that leaves the world a little better at the end of the day. 🌎
             </p>
           </div>
+          <div class="banner-img-container">
           <img class="banner-img" src="./assets/comic_projects_1.png" alt="" />
+          </div>
         </div>
         <p class="banner-credit">Image generated with DALL&middot;E 3 and enhanced by Christa DeJesus.</p>
       </section>
-      <section class="intro">
-        <h1 class="hidden">Projects</h1>
-        <p>Welcome to my projects! More coming soon...</p>
+      
+      <!-- INTRO -->
+      <section class="intro" id="top">
+        <h1 class="intro-heading">Development Projects</h1>
+        <p>
+          Like any enthusiastic web developer, I have a long list of "mini-projects" and code snippets, but only fully supported and deployed projects will be featured here. More coming soon!
+        </p>
+        <p><strong>Want to know more about these projects? <a href="#page-footer">Let's connect!</a></strong></p>
       </section>
-      <section>
-        <article class="comic-box">
-          <h2 class="display-heading">Current Projects</h2>
-          <div class="comic-content"></div>
-        </article>
-      </div>
-        <article class="comic-box">
-          <h2 class="display-heading">Let's Collaborate!</h2>
-          <div class="comic-content"></div>
-        </article>
+      <section class="comic-box primary-1">
+        <img class="comic-img" src="./assets/dots_small_square.svg" alt=""/>
+        <div class="comic-overlay">
+          <h2 class="comic-heading" >Current Projects</h2>
+          <div class="comic-content project-container" >
+            <div class="project-card">
+              <div class="project-img-container">
+              <img src="./assets/devittle_logo.png">
+            </div>
+              <div class="project-details">
+                <p><strong>Type: </strong>Website with Blog</p>
+                <p><strong>Technology:</strong> React, Next.js, Hygraph CMS</p>
+                <p><strong>Status: </strong>Launched with ongoing development and content creation</p>
+                <p><strong>URL: </strong><a href="https://devittle.com" target="_blank" rel="noopener noreferrer">Devittle.com</a></p>
+              </div>
+            </div>
+            <div class="project-card">
+              <p style="font-size: 5rem">🚧</p>
+              <p>More projects coming soon!</p>
+            </div>
+          </div>
+        </div>
       </section>
       <gallerycta-component></gallerycta-component>
       </main>
+      <!-- FOOTER -->
     <footer-component></footer-component>
   </body>
 </html>
