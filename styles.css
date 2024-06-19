@@ -161,6 +161,20 @@ button {
   color: var(--primary-4);
 }
 
+/* IMAGES */
+/* Large images will not display on small screens */
+.img-lg {
+  display: none;
+}
+@media screen and (min-width: 750px) {
+  
+  .img-sm {
+    display: none;
+  }
+  .img-lg {
+    display: block;
+  }
+}
 /* COLORS*/
 .primary-1 {
   background: var(--primary-1);
