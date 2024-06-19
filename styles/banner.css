@@ -27,7 +27,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 400px;
+    height: 440px;
   }
   .banner-img {
     object-fit: cover;

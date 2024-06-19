@@ -43,7 +43,7 @@
   font-size: 10;
 
   /* OTHER VARIABLES */
-  --topnav-height: 70px;
+  --topnav-height: 80px;
   --transition: all 200ms ease-in-out;
   --transition-slow: all 400ms ease-in-out;
   --box-shadow-sm: 0px 3px 12px rgba(0,0,0,.3);
@@ -191,34 +191,74 @@ button {
   font-size: 0;
   opacity: 0;
 }
-.display-heading {
+.uppercase-display {
   font-family: var(--display);
   font-size: 3.4rem;
   font-weight: 400;
   line-height: var(--line-height-xsm);
-  letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--neutral-lt);
-  background: var(--neutral-dkdk);
-  margin-bottom: 4rem;
-  padding: 1rem 0;
-  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* HEADER */
+/* PAGE HEADER */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  height: var(--topnav-height);
+}
+.page-header .name {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--display);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: var(--line-height-xsm);
+}
+.page-header .left {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+.page-header .title {
+  font-family: var(--cursive);
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--primary-4);
+}
+@media screen and (min-width: 450px) {
+  .page-header .name {
+    font-size: 2.2rem;
+  }
+  .page-header .title {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 550px) {
+  .page-header .name {
+    font-size: 2.8rem;
+  }
+  .page-header .title {
+    font-size: 3.6rem;
+  }
 }
 
 /* INTRO */
 .intro {
-  margin: 6rem 0;
-}
-.intro-heading {
-  font-family: var(--cursive);
-  color: var(--primary-4);
-  font-size: 4rem;
-  font-weight: 500;
-  margin-bottom: 2rem;
-  text-align: center;
+  border: var(--border-comic);
+  margin: 4rem 0;
+  padding: 4rem 2rem 2rem 2rem;
 }
 .intro p:first-of-type {
   margin-top: 0;
+}
+@media screen and (min-width: 750px) {
+  .intro {
+    padding: 4rem;
+  }
 }
 
 /* PAGE TURNER - CTA at bottom of page */
@@ -242,7 +282,7 @@ button {
   position: relative;
   min-height: 300px;
   border: var(--border-comic);
-  margin: 2rem 0;
+  margin: 4rem 0;
   overflow: hidden;
 }
 .comic-img {
@@ -266,14 +306,10 @@ button {
   height: 100%;
   min-height: 100%;
 }
-.comic-heading {
-  font-family: var(--comic);
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 1px;
+.comic-overlay .uppercase-display:first-of-type {
   color: var(--neutral-lt);
   background: var(--neutral-dkdk);
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
 }
 .comic-content {

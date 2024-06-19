@@ -13,16 +13,22 @@
       rel="stylesheet"
     />
     <title>ChristaDeJesus.github.io | Projects</title>
-    <script src="components/topnav.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/navlinks.js" type="text/javascript" defer></script>
     <script src="components/gallerycta.js" type="text/javascript" defer></script>
   </head>
 
   <body id="top">
     <main>
-      <!-- TOPNAV -->
-      <topnav-component></topnav-component>
-
+      <!-- HEADER + NAVLINKS -->
+      <header class="page-header home-header">
+        <div class="left">
+        <p class="name"><span>Christa</span><span>DeJesus</span></p>
+        <h1 class="title">"The Projects"</h1>
+      </div>
+        <navlinks-component></navlinks-component>
+      </header>
+      
       <!-- BANNER -->
       <section class="banner">
         <div class="banner-container">
@@ -40,16 +46,16 @@
       
       <!-- INTRO -->
       <section class="intro" id="top">
-        <h1 class="intro-heading">Development Projects</h1>
+        <h2 class="uppercase-display">Development Projects</h2>
         <p>
-          Like any enthusiastic web developer, I have a long list of "mini-projects" and code snippets, but only fully supported and deployed projects will be featured here. More coming soon!
+          Like any enthusiastic web developer, I have a long list of "mini-projects" and code snippets, but only fully supported and deployed projects will be featured here.
         </p>
-        <p><strong>Want to know more about these projects? <a href="#page-footer">Let's connect!</a></strong></p>
+        <p><strong>Want to know more about these projects or get the latest updates? <a href="#page-footer">Let's connect!</a></strong></p>
       </section>
       <section class="comic-box primary-1">
         <img class="comic-img" src="./assets/dots_small_square.svg" alt=""/>
         <div class="comic-overlay">
-          <h2 class="comic-heading" >Current Projects</h2>
+          <h2 class="uppercase-display" >Current Projects</h2>
           <div class="comic-content project-container" >
             <div class="project-card">
               <div class="project-img-container">
@@ -64,7 +70,7 @@
             </div>
             <div class="project-card">
               <p style="font-size: 5rem">🚧</p>
-              <p>More projects coming soon!</p>
+              <p class="uppercase-display">More projects coming soon!</p>
             </div>
           </div>
         </div>

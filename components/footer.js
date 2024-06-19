@@ -16,7 +16,6 @@ class Footer extends HTMLElement {
                     } 
                 .page-footer h2 {
                     color: var(--primary-3);
-                    font-weight: 400;
                 }
                 .page-footer p {
                     font-size: 1.4rem;
@@ -44,7 +43,7 @@ class Footer extends HTMLElement {
             </style>
             <footer class="page-footer" id="page-footer">
                 <div class="social-container">
-                    <h2>Join me on...</h2>
+                    <h2 class="uppercase-display">Join me on...</h2>
                     <div class="social-links">
                         <a href="https://github.com/christadejesus" target="_blank" rel="noopener noreferrer"><i class="ri-github-fill"></i></a>
                         <a href="https://codepen.io/christadejesus" target="_blank" rel="noopener noreferrer"><i class="ri-codepen-fill"></i></a> 

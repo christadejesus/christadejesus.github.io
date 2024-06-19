@@ -13,7 +13,7 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
     rel="stylesheet"
 />     
-      <script src="components/topnav.js" type="text/javascript" defer></script>
+      <script src="components/navlinks.js" type="text/javascript" defer></script>
       <script src="components/footer.js" type="text/javascript" defer></script>
       <script src="components/projectscta.js" type="text/javascript" defer></script>
       <title>ChristaDeJesus.github.io | About</title>
@@ -21,8 +21,15 @@
 
   <body>
     <main>
-      <!-- TOPNAV -->
-      <topnav-component></topnav-component> 
+      <!-- HEADER + NAVLINKS -->
+      <header class="page-header">
+        <div class="left">
+          <p class="name"><span>Christa</span><span>DeJesus</span></p>
+          <h1 class="title">"The Techie"</h1>
+        </div>
+        <navlinks-component></navlinks-component>
+      </header>
+
       <!-- BANNER --> 
       <section class="banner"> 
         <div class="banner-container">
@@ -41,9 +48,8 @@
 
       <!-- INTRO -->
       <section class="intro">
-        <h1 class="hidden">About</h1>
-        <h2 class="intro-heading">Hello, friends!</h2>
-        <p>Thank you for stopping by my design and development portfolio. I'm Christa, a web developer, designer, and CompTIA A+ certified IT Technician in Indianapolis, IN. You can learn more about me and what I love to do below, or jump straight to the fun stuff &mdash; my <a href="/gallery.html"><strong>Gallery</strong></a> of design work, or the <a href="/projects.html"><a><strong>Projects</strong></a> page to find links to my current projects.</p>
+        <h2 class="uppercase-display">Welcome, friends!</h2>
+        <p>Thank you for stopping by my design and development portfolio. I'm Christa, a web developer, designer, and CompTIA A+ certified IT Technician in Indianapolis, IN. You can learn more about me and what I love to do below, or jump straight to the fun stuff &mdash; my <a href="/gallery.html"><strong>Gallery</strong></a> of design work, or the <a href="/projects.html"><a><strong>Projects</strong></a> page to what I'm working on now.</p>
         <p>I hope you enjoy exploring the site, and don't forget to <a href="#page-footer">join me on social media</a>. Let's connect and talk tech! 😁</p>
       </section>
 
@@ -51,7 +57,7 @@
       <section class="comic-box primary-3">
         <img class="comic-img" src="./assets/dots_small_square.svg" alt=""/>
         <div class="comic-overlay">
-          <h2 class="comic-heading" >My Favorite Tools</h2>
+          <h2 class="uppercase-display" >My Favorite Tools</h2>
           <div class="comic-content" >
             <ul class="about-tools">
               <li><img src="https://img.shields.io/badge/html5-081929?style=for-the-badge&logo=html5&logoColor=f06c3b" /></li>

@@ -12,8 +12,8 @@
       rel="stylesheet"
     />
     <title>ChristaDeJesus.github.io | Gallery</title>
-    <script src="components/topnav.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/navlinks.js" type="text/javascript" defer></script>
     <script
       src="components/projectscta.js"
       type="text/javascript"
@@ -23,8 +23,16 @@
 
   <body>
     <main>
-      <!-- TOPNAV -->
-      <topnav-component></topnav-component>
+      <!-- HEADER + NAVLINKS -->
+      <header class="page-header home-header">
+        <div class="left">
+        <p class="name"><span>Christa</span><span>DeJesus</span></p>
+        <h1 class="title">"The Gallery"</h1>
+      </div>
+        <navlinks-component></navlinks-component>
+      </header>
+      
+      
       <!-- BANNER -->
       <section class="banner">
         <div class="banner-container">
@@ -51,24 +59,12 @@
 
       <!-- INTRO -->
       <section class="intro" id="top">
-        <h1 class="hidden">Gallery</h1>
-        <h2 class="intro-heading">Design Gallery</h2>
-        <p>
-          Although I don't consider myself an artist, I am a techie who loves
-          digital design! My favorite spaces to work in are Inkscape, Adobe
-          Photoshop, Canva, and DALL&middot;E 3, a popular AI image creation
-          tool.
-        </p>
-        <p>
-          I especially enjoy creating scalable vector graphics (SVGs), typically
-          used for logos, web graphics, and print products, as shown below.
-          However, I also love the challenge of special projects such as
-          converting low-resolution <a href="#photosToSvgs">photos to SVGs</a>,
-          as well as
-          <a href="#customGraphicDesign">custom graphic design</a> and
-          <a href="#imageEditing">image editing</a>.
-        </p>
-        <p><strong>Hover over any gallery image for more details, or feel free to <a href="#page-footer">contact me</a> to chat about design!</strong></p>
+        <h2 class="uppercase-display">Designer? Artist? Enthusiast?</h2>
+          <p>I've been working with digital design in some capacity since my years as a professional photographer over 15 years ago.
+            I most often create and edit within Inkscape, Adobe Photoshop, and Canva, but I also love to use Visual Studio Code for CSS graphics and animation, as well as DALL&middot;E 3 for an AI boost to creativity and productivity. 
+          </p>
+          <p>Am I a graphic artist, web designer, or just obsessed with design? Who can say for sure? I only know that I enjoy using technology to create work like you see below.</p>
+        <p><strong>If you're feeling brave, give the gallery images a hover or a click.🤩</strong></p>
       </section>
 
       <!-- MAIN CONTENT -->
@@ -150,7 +146,7 @@
         >
       </section>
       <section>
-        <h2 class="display-heading" id="photosToSvgs">Photos to SVGs</h2>
+        <h2 class="uppercase-display" id="photosToSvgs">Photos to SVGs...</h2>
         <div class="panels-container">
           <div class="panel panel-a">
             <img
@@ -220,8 +216,8 @@
       </section>
 
       <section>
-        <h2 class="display-heading" id="customGraphicDesign">
-          Custom Graphic Design
+        <h2 class="uppercase-display" id="customGraphicDesign">
+          Custom Graphic Design...
         </h2>
         <div class="panels-container">
           <div class="panel panel-a">
@@ -319,7 +315,7 @@
         >
       </section>
       <section>
-        <h2 class="display-heading" id="imageEditing">Image Editing</h2>
+        <h2 class="uppercase-display" id="imageEditing">Image Editing...</h2>
         <div class="panels-container">
           <div class="panel panel-a">
             <img
