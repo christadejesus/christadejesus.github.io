@@ -55,7 +55,7 @@ class GalleryCTA extends HTMLElement {
                             <h2 id="cta-heading">Want to see what's new in the design gallery?</h2>
                             <a class="btn btn-alert" href="/gallery.html">Ooh, let's go!</a>  
                         </div>
-                    </div>
+                    </div> 
             </section>
         `;
       }
