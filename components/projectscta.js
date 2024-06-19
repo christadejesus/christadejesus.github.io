@@ -10,7 +10,7 @@ class ProjectsCTA extends HTMLElement {
                 .cta-container {
                     position: relative;
                     border: var(--border-comic);
-                    background-color: var(--primary-2);
+                    background: var(--primary-2);
                     margin: 2rem 0;
                     overflow: hidden;
                 }

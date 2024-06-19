@@ -317,6 +317,7 @@ button {
   background: var(--neutral-dkdk);
   padding: 2rem;
   text-align: center;
+  letter-spacing: 1px;
 }
 .comic-content {
   display: flex;
