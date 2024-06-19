@@ -1,11 +1,9 @@
 
-/* FOOTER */
-.page-footer {
-  text-align: right;
-  font-size: 1.4rem;
-  font-family: var(--comic);
-  font-style: italic;
+main.home {
+  height: 100vh;
+  min-height: 100vh;
 }
+
 /* HERO SECTION */
 .hero {
   position: relative;
@@ -57,16 +55,24 @@
     opacity: 0;
     animation-name: showHeroText;
     animation-duration: 300ms;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
   }
   .hero-cta {
     opacity: 0;
     animation-name: showHeroText;
     animation-duration: 300ms;
-    animation-delay: 4s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
   }
+  /* FOOTER */
+.page-footer {
+  text-align: right;
+  font-size: 1.4rem;
+  font-family: var(--comic);
+  font-style: italic;
+}
+
   @media screen and (min-width: 500px) {
     .character-img {
       left: 0;
