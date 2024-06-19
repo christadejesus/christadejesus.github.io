@@ -10,7 +10,6 @@ class GalleryCTA extends HTMLElement {
                .cta-container {
                     position: relative;
                     border: var(--border-comic);
-                    background: linear-gradient(20deg, var(--primary-2), var(--primary-2-lt));
                     margin: 2rem 0;
                     overflow: hidden;
                 }
