@@ -1,15 +1,37 @@
 /* ABOUT */
-
+.about-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  z-index: 100;
+}
+.about-overlay-graphic {
+  max-height: 100%;
+  max-width: 100%;
+}
+.about-overlay-text {
+  position: absolute;
+  font-family: var(--comic);
+  font-size: 2rem;
+}
+.guitar {
+  font-size: 3rem;
+}
+.inkscape {
+  line-height: 2;
+}
 .about-tools {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin: auto auto;
+  padding: 4rem;
 }
-.about-tools img {
-  height: 30px;
-}
+
 .about-social-links {
   display: grid;
   grid-template-columns: 1fr 1fr;

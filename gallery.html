@@ -3,163 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A Design and Development Portfolio by Christa DeJesus" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      href="/assets/laughing_emoji_favicon_180.png"
+    <meta
+      name="description"
+      content="A Design and Development Portfolio by Christa DeJesus"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Pacifico&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Pacifico&family=Passion+One:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/gallery.css" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="/styles/banner.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
       rel="stylesheet"
     />
     <title>ChristaDeJesus.github.io | Gallery</title>
+    <script src="components/topnav.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
-    <script src="components/navlinks.js" type="text/javascript" defer></script>
-    <script
-      src="components/projectscta.js"
-      type="text/javascript"
-      defer
-    ></script>
   </head>
 
   <body>
-    <main>
-      <!-- HEADER + NAVLINKS -->
-      <header class="page-header home-header">
-        <div class="left">
-          <p class="name"><span>Christa</span><span>DeJesus</span></p>
-          <h1 class="title">"The Gallery"</h1>
-        </div>
-        <navlinks-component></navlinks-component>
-      </header>
-
-      <!-- BANNER -->
-      <section class="banner">
-        <div class="banner-container">
-          <div class="narration">
-            <p>
-              ...The ticking of the clock seemed to grow louder as the minutes
-              turned to hours. Her thoughts again returned to the question that
-              haunted her still...
-            </p>
-          </div>
-          <div class="banner-img-container">
-            <img
-              class="banner-img img-sm"
-              src="./assets/comic_design_1_sm.png"
-              alt=""
-            />
-            <img
-              class="banner-img img-lg"
-              src="./assets/comic_design_1.png"
-              alt=""
-            />
-          </div>
-          <div class="banner-text">
-            <p class="comic-bubble">...serif or sans-serif?</p>
-          </div>
-        </div>
-        <p class="banner-credit">
-          Image generated with DALL&middot;E 3 and enhanced by Christa DeJesus.
-        </p>
-      </section>
-
-      <!-- INTRO -->
+    <!-- HEADER -->
+    <topnav-component></topnav-component>
+    <main class="main-grid">
+      <section
+        class="hero"
+        style="background-image: url(/assets/comic_projects_1.png)"
+      ></section>
       <article class="intro" id="top">
-        <h2 class="uppercase-display">Designer? Artist? Enthusiast?</h2>
+        <h1 class="section-heading-cursive">Design Gallery</h1>
         <p>
           I've been working with digital design in some capacity since my years
-          as a professional photographer nearly 15 years ago. I most often create
-          and edit within Inkscape, Adobe Photoshop, and Canva, but I also love
-          to use Visual Studio Code for CSS graphics and animation, as well as
-          DALL&middot;E 3 for an AI boost to creativity and productivity.
+          as a professional photographer nearly 15 years ago. I most often
+          create and edit within Inkscape, Adobe Photoshop Elements, and Canva,
+          but I also love to use Visual Studio Code for CSS graphics and
+          animation, as well as DALL&middot;E 3 for an AI boost to creativity
+          and productivity.
         </p>
         <p>
-          Am I a graphic artist, web designer, or just obsessed with design? Who
-          can say for sure? I only know that I enjoy using technology to create
-          work like you see below.
-        </p>
-        <p>
-          <strong
-            >If you're feeling brave, give the gallery images a hover or a
-            click.🤩</strong
-          >
+          Am I a graphic artist, web designer, or just obsessed with design?
+          Well, I'll leave that up to you to decide. I'm much more comfortable
+          showing my work than talking about it, so how about we get to some
+          visuals? 😁
         </p>
       </article>
-
-      <!-- MAIN CONTENT -->
-      <section>
-        <div class="panels-container">
-          <div class="panel panel-1">
-            <img
-              class="panel-img"
-              src="./assets/devittle_logo.png"
-              alt="Devittle logo"
-              loading="lazy"
-            />
-            <div class="panel-details">
+      <section class="gallery-grid">
+        <div class="box">
+          <img
+            class="box-img-full"
+            src="./assets/yoga_clouds.png"
+            alt="Yoga in the clouds SVG"
+            loading="lazy"
+          />
+          <div class="box-overlay box-overlay-dk">
+            <div class="box-details">
               <ul>
-                <li><span>Type:</span> SVG logo</li>
+                <li><span>Type:</span> SVG web graphics</li>
                 <li><span>Tech:</span> Inkscape</li>
               </ul>
             </div>
           </div>
-          <div class="panel panel-2">
-            <img
-              class="panel-img"
-              src="./assets/yum_emoji.png"
-              alt="3D Yum Emoji"
-              loading="lazy"
-            />
-            <div class="panel-details">
-              <ul>
-                <li><span>Type:</span> SVG web graphic</li>
-                <li><span>Tech:</span> Inkscape</li>
-              </ul>
-            </div>
-          </div>
-          <div class="panel panel-3">
-            <img
-              class="panel-img"
-              src="./assets/cavapoo_momma_logo.png"
-              alt="Cavapoo Momma logo"
-              loading="lazy"
-            />
-            <div class="panel-details">
-              <ul>
-                <li><span>Type:</span> SVG logo</li>
-                <li><span>Tech:</span> Inkscape</li>
-              </ul>
-            </div>
-          </div>
-          <div class="panel panel-4">
-            <img
-              class="panel-img"
-              src="./assets/desk.png"
-              alt="Desk SVG"
-              loading="lazy"
-            />
-            <div class="panel-details">
-              <ul>
-                <li><span>Type:</span> SVG web graphic</li>
-                <li><span>Tech:</span> Inkscape</li>
-              </ul>
-            </div>
-          </div>
-          <div class="panel panel-5">
-            <img
-              class="panel-img"
-              src="./assets/woman_laptop.png"
-              alt="Woman Working on a Laptop SVG"
-              loading="lazy"
-            />
-            <div class="panel-details">
+        </div>
+        <div class="box">
+          <img
+            class="box-img"
+            src="./assets/RubberDucky.png"
+            alt="Desk SVG"
+            loading="lazy"
+          />
+          <div class="box-overlay box-overlay-dk">
+            <div class="box-details">
               <ul>
                 <li><span>Type:</span> SVG web graphic</li>
                 <li><span>Tech:</span> Inkscape</li>
@@ -167,268 +83,227 @@
             </div>
           </div>
         </div>
-        <a href="#top" class="backToTop"
-          ><i class="ri-arrow-up-wide-line"></i><span>Back to top</span></a
-        >
-      </section>
-      <section>
-        <h2 class="uppercase-display" id="photosToSvgs">Photos to SVGs...</h2>
-        <div class="panels-container">
-          <div class="panel panel-a">
-            <img
-              class="panel-img-full"
-              src="./assets/RubberDucky_OG.png"
-              loading="lazy"
-            />
-            <div class="panel-details">
+        <div class="box">
+          <img
+            class="box-img-full"
+            src="./assets/cool_cavapoo.png"
+            alt="Cavapoo with Sunglasses Digital Art"
+            loading="lazy"
+          />
+          <div class="box-overlay box-overlay-dk">
+            <div class="box-details">
               <ul>
-                <li><span>Type:</span> JPG Photograph</li>
+                <li><span>Type:</span> Digital Art</li>
                 <li>
-                  <span>Credit:</span>
-                  <span
-                    >Photo by
-                    <a
-                      href="https://unsplash.com/@timothycdykes?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                      >Timothy Dykes</a
-                    ></span
-                  >
-                </li>
-                <li>
-                  <span>Source:</span>
-                  <span
-                    ><a
-                      href="https://unsplash.com/photos/yellow-rubber-duck-on-white-background-LhqLdDPcSV8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                      >Unsplash</a
-                    ></span
-                  >
+                  <span>Tech:</span> DALL&middot;E 3 + Adobe Photoshop Elements
+                  + Inkscape
                 </li>
               </ul>
             </div>
-            <div class="panel-label">Original Photo</div>
-          </div>
-          <div class="panel panel-b">
-            <img
-              class="panel-img-full"
-              src="./assets/RubberDucky.png"
-              loading="lazy"
-            />
-            <div class="panel-details">
-              <ul>
-                <li><span>Type:</span> SVG web graphic</li>
-                <li><span>Tech:</span> Inkscape</li>
-              </ul>
-            </div>
-            <div class="panel-label">My SVG Version</div>
-          </div>
-          <div class="panel panel-a">
-            <img
-              class="panel-img-full"
-              src="./assets/OG_Tiles.png"
-              loading="lazy"
-            />
-            <div class="panel-details">
-              <ul>
-                <li><span>Type:</span> JPG Photograph</li>
-                <li>
-                  <span>Credit:</span>
-                  <span
-                    >Photo by
-                    <a
-                      href="https://unsplash.com/@edwardhowellphotography?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                      >Edward Howell</a
-                    ></span
-                  >
-                </li>
-                <li>
-                  <span>Source:</span>
-                  <span>
-                    <a
-                      href="https://unsplash.com/photos/text-gM7hANhGSBU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                      >Unsplash</a>
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <div class="panel-label">Original Photo</div>
-          </div>
-          <div class="panel panel-b">
-            <img
-              class="panel-img-full"
-              src="./assets/Tiles.png"
-              loading="lazy"
-            />
-            <div class="panel-details">
-              <ul>
-                <li><span>Type:</span> SVG web graphic</li>
-                <li><span>Tech:</span> Inkscape</li>
-              </ul>
-            </div>
-            <div class="panel-label">My SVG Version</div>
           </div>
         </div>
-        <a href="#top" class="backToTop"
-          ><i class="ri-arrow-up-wide-line"></i><span>Back to top</span></a
-        >
-      </section>
-
-      <section>
-        <h2 class="uppercase-display" id="customGraphicDesign">
-          Custom Graphic Design...
-        </h2>
-        <div class="panels-container">
-          <div class="panel panel-a">
-            <img
-              class="panel-img-full"
-              src="./assets/dogDad_final.png"
-              alt="Dog Dad Wall Art"
-              loading="lazy"
-            />
-            <div class="panel-details">
+        <div class="box">
+          <img
+            class="box-img"
+            src="./assets/devittle_logo.png"
+            alt="Devittle logo"
+            loading="lazy"
+          />
+          <div class="box-overlay box-overlay-dk">
+            <div class="box-details">
               <ul>
-                <li><span>Type:</span> JPG to SVG, then to JPG + PDF</li>
-                <li><span>Purpose:</span>Printable Wall Art</li>
+                <li><span>Type:</span> SVG logo</li>
+                <li><span>Tech:</span> Inkscape</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            class="box-img-full"
+            src="./assets/Tiles.png"
+            alt="Game tiles message SVG"
+            loading="lazy"
+          />
+          <div class="box-overlay box-overlay-dk">
+            <div class="box-details">
+              <ul>
+                <li><span>Type:</span> SVG web graphics</li>
+                <li><span>Tech:</span> Inkscape</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            class="box-img"
+            src="./assets/yum_emoji.png"
+            alt="3D Yum Emoji"
+            loading="lazy"
+          />
+          <div class="box-overlay box-overlay-dk">
+            <div class="box-details">
+              <ul>
+                <li><span>Type:</span> SVG web graphic</li>
+                <li><span>Tech:</span> Inkscape</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            class="box-img"
+            src="./assets/woman_laptop.png"
+            alt="Woman and laptop SVG"
+            loading="lazy"
+          />
+          <div class="box-overlay box-overlay-dk">
+            <div class="box-details">
+              <ul>
+                <li><span>Type:</span> SVG web graphics</li>
+                <li><span>Tech:</span> Inkscape</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            class="box-img"
+            src="./assets/desk.png"
+            alt="Desk SVG"
+            loading="lazy"
+          />
+          <div class="box-overlay box-overlay-dk">
+            <div class="box-details">
+              <ul>
+                <li><span>Type:</span> SVG logo</li>
+                <li><span>Tech:</span> Inkscape</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            class="box-img"
+            src="./assets/cavapoo_momma_logo.png"
+            alt="Cavapoo Momma logo"
+            loading="lazy"
+          />
+          <div class="box-overlay box-overlay-dk">
+            <div class="box-details">
+              <ul>
+                <li><span>Type:</span> SVG logo</li>
+                <li><span>Tech:</span> Inkscape</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            class="box-img-full"
+            src="./assets/img2.png"
+            alt="Printable Coloring Pages + Advertisement"
+            loading="lazy"
+          />
+          <div class="box-overlay box-overlay-dk">
+            <div class="box-details">
+              <ul>
+                <li>
+                  <span>Type:</span> Printable Coloring Pages + Advertisement
+                </li>
+                <li><span>Tech:</span> DALL&middot;E 3 + Inkscape + Canva</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            class="box-img"
+            src="./assets/dogDad_final.png"
+            alt="Dog dad and cavapoo line art"
+            loading="lazy"
+          />
+          <div class="box-overlay box-overlay-dk">
+            <div class="box-details">
+              <ul>
+                <li><span>Type:</span> SVG Line Art</li>
                 <li><span>Tech:</span> DALL&middot;E 3 + Inkscape</li>
               </ul>
             </div>
           </div>
-          <div class="panel panel-b">
-            <img
-              class="panel-img-full"
-              src="./assets/cool_cavapoo.png"
-              alt="Cool Cavapoo with Sunglasses Digital Art"
-              loading="lazy"
-            />
-            <div class="panel-details">
-              <ul>
-                <li><span>Type:</span> JPG + SVG to PNG</li>
-                <li><span>Purpose:</span>High resolution product design</li>
-                <li>
-                  <span>Tech:</span> DALL&middot;E 3 + Adobe Photoshop +
-                  Inkscape
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="panel panel-a">
-            <img
-              class="panel-img-full"
-              src="./assets/yoga_clouds.png"
-              alt="Yoga Clouds Digital Art"
-              loading="lazy"
-            />
-            <div class="panel-details">
-              <ul>
-                <li><span>Type:</span> SVG</li>
-                <li>
-                  <span>Purpose:</span>Web graphic + High resolution product
-                  design
-                </li>
-                <li><span>Tech:</span> Inkscape</li>
-              </ul>
-            </div>
-          </div>
-          <div class="panel panel-b">
-            <img
-              class="panel-img-full"
-              src="./assets/meditate_clouds.png"
-              alt="Meditation Clouds Digital Art"
-              loading="lazy"
-            />
-            <div class="panel-details">
-              <ul>
-                <li><span>Type:</span> SVG</li>
-                <li>
-                  <span>Purpose:</span>Web graphic + High resolution product
-                  design
-                </li>
-                <li><span>Tech:</span> Inkscape</li>
-              </ul>
-            </div>
-          </div>
-          <div class="panel panel-a">
-            <img
-              class="panel-img-full"
-              src="./assets/img3.png"
-              alt="Cavapoo Momma Coloring Pages Advertisement"
-              loading="lazy"
-            />
-            <div class="panel-details">
+        </div>
+        <div class="box">
+          <img
+            class="box-img-full"
+            src="./assets/img3.png"
+            alt="Printable Coloring Pages + Advertisement"
+            loading="lazy"
+          />
+          <div class="box-overlay box-overlay-dk">
+            <div class="box-details">
               <ul>
                 <li>
-                  <span>Type:</span> JPG to SVG, then to PDF (product) + PNG
-                  (ad)
+                  <span>Type:</span> Printable Coloring Pages + Advertisement
                 </li>
                 <li>
-                  <span>Purpose:</span>Printable coloring book product design +
-                  digital marketing
+                  <span>Tech:</span> Product Photography + DALL&middot;E 3 +
+                  Inkscape + Canva
                 </li>
-                <li><span>Tech:</span> DALL&middot;E 3 + Inkscape + Canva</li>
-              </ul>
-            </div>
-          </div>
-          <div class="panel panel-b">
-            <img
-              class="panel-img-full"
-              src="./assets/img2.png"
-              alt="Cavapoo Momma Coloring Pages Advertisement"
-              loading="lazy"
-            />
-            <div class="panel-details">
-              <ul>
-                <li>
-                  <span>Type:</span> JPG to SVG, then to PDF (product) + PNG
-                  (ad)
-                </li>
-                <li>
-                  <span>Purpose:</span>Printable coloring book product design +
-                  digital marketing
-                </li>
-                <li><span>Tech:</span> DALL&middot;E 3 + Inkscape + Canva</li>
               </ul>
             </div>
           </div>
         </div>
-        <a href="#top" class="backToTop"
-          ><i class="ri-arrow-up-wide-line"></i><span>Back to top</span></a
-        >
       </section>
-      <section>
-        <h2 class="uppercase-display" id="imageEditing">Image Editing...</h2>
-        <div class="panels-container">
-          <div class="panel panel-a">
+      <article>
+        <h2 class="section-heading-cursive">Image Editing...</h2>
+        <p>
+          As a photographer, photo editing and enhancement were always some of
+          my favorite tasks! Although I don't photograph as much as I use to, I
+          do use these skills in product photography, customizing website images
+          to brand colors and themes, and when working with AI generated images.
+          AI technology is amazing, but it does create some "interesting"
+          compositions that call for a human touch!
+        </p>
+        <section class="grid-2">
+          <div class="box">
             <img
-              class="panel-img-full"
+              class="box-img-full"
               src="./assets/confused_tech.png"
-              alt="Confused techie AI generated image"
+              alt="AI generated image of a confused techie"
               loading="lazy"
             />
-            <div class="panel-details">
-              <ul>
-                <li><span>Type:</span> JPG</li>
-                <li><span>Source:</span> DALL&middot;E 3</li>
-              </ul>
+            <div class="box-label">Before</div>
+            <div class="box-overlay box-overlay-dk">
+              <div class="box-details">
+                <ul>
+                  <li><span>Type:</span>AI generated JPG</li>
+                  <li><span>Source:</span> DALL&middot;E 3</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="panel panel-b">
+          <div class="box">
             <img
-              class="panel-img-full"
+              class="box-img-full"
               src="./assets/confused_tech_edit.png"
-              alt="Edit of Confused Techie AI generated image"
+              alt="Edit of confused techie image"
               loading="lazy"
             />
-            <div class="panel-details">
-              <ul>
-                <li><span>Type:</span> PNG</li>
-                <li><span>Tech:</span> DALL&middot;E 3 + Adobe Photoshop</li>
-              </ul>
+            <div class="box-label">After</div>
+            <div class="box-overlay box-overlay-dk">
+              <div class="box-details">
+                <ul>
+                  <li><span>Type:</span>Edited PNG</li>
+                  <li><span>Tech:</span> Adobe Photoshop Elements</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <a href="#top" class="backToTop"
-          ><i class="ri-arrow-up-wide-line"></i><span>Back to top</span></a
-        >
-      </section>
-      <projectscta-component></projectscta-component>
+        </section>
+      </article>
     </main>
     <!-- FOOTER -->
     <footer-component></footer-component>

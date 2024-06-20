@@ -3,89 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A Design and Development Portfolio by Christa DeJesus" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      href="/assets/laughing_emoji_favicon_180.png"
+    <meta
+      name="description"
+      content="A Design and Development Portfolio by Christa DeJesus"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Pacifico&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Pacifico&family=Passion+One:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="/styles/projects.css" />
-    <link rel="stylesheet" href="/styles/banner.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
       rel="stylesheet"
     />
     <title>ChristaDeJesus.github.io | Projects</title>
+    <script src="components/topnav.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
-    <script src="components/navlinks.js" type="text/javascript" defer></script>
-    <script src="components/gallerycta.js" type="text/javascript" defer></script>
   </head>
 
   <body id="top">
-    <main>
-      <!-- HEADER + NAVLINKS -->
-      <header class="page-header home-header">
-        <div class="left">
-        <p class="name"><span>Christa</span><span>DeJesus</span></p>
-        <h1 class="title">"The Projects"</h1>
-      </div>
-        <navlinks-component></navlinks-component>
-      </header>
-      
-      <!-- BANNER -->
-      <section class="banner">
-        <div class="banner-container">
-          <div class="narration">
-            <p>
-              ...Tech was her passion, but really...she just wanted to contribute to something bigger than herself &mdash; something that leaves the world a little better at the end of the day. 🌎
-            </p>
-          </div>
-          <div class="banner-img-container">
-          <img class="banner-img img-sm" src="./assets/comic_projects_1_sm.png" alt="" />
-          <img class="banner-img img-lg" src="./assets/comic_projects_1.png" alt="" />
-          </div>
-        </div>
-        <p class="banner-credit">Image generated with DALL&middot;E 3 and enhanced by Christa DeJesus.</p>
-      </section>
-      
-      <!-- INTRO -->
-      <article class="intro" id="top">
-        <h2 class="uppercase-display">Development Projects</h2>
+    <!-- HEADER -->
+    <topnav-component></topnav-component>
+    <main class="main-grid">
+      <section
+        class="hero"
+        style="background-image: url(./assets/comic_design_1.png)"
+      ></section>
+      <article class="intro">
+        <h1 class="section-heading-cursive">Development Projects</h1>
         <p>
-          Like any enthusiastic web developer, I have a long list of "mini-projects" and code snippets, but only fully supported and deployed projects will be featured here.
+          Like any enthusiastic web developer, I have a long list of
+          "mini-projects" and code snippets, but only fully supported and
+          deployed projects will be featured here.
         </p>
-        <p><strong>Want to know more about these projects or get the latest updates? <a href="#page-footer">Let's connect!</a></strong></p>
+        <p>
+          Looking for the details? Hover or click on any project to see more
+          information and a link to view the project live. If you have any
+          comments, questions, or feedback, I'd love to hear from you!
+        </p>
       </article>
-      <section class="comic-box" style="background: radial-gradient(circle, var(--primary-1-lt), var(--primary-1))">
-        <img class="comic-img" src="./assets/dots_small_square.svg" alt=""/>
-        <div class="comic-overlay">
-          <h2 class="uppercase-display" >Current Projects</h2>
-          <div class="comic-content project-container" >
-            <div class="project-card">
-              <div class="project-img-container">
-              <img src="./assets/devittle_logo.png">
-            </div>
-              <div class="project-details">
-                <p><strong>Type: </strong>Website with Blog</p>
-                <p><strong>Technology:</strong> React, Next.js, Hygraph CMS</p>
-                <p><strong>Status: </strong>Launched with ongoing development and content creation</p>
-                <p><strong>URL: </strong><a href="https://devittle.com" target="_blank" rel="noopener noreferrer">Devittle.com</a></p>
-              </div>
-            </div>
-            <div class="project-card">
-              <p style="font-size: 5rem">🚧</p>
-              <p class="uppercase-display">More projects coming soon!</p>
+
+      <div class="grid-2">
+        <section class="box">
+          <img class="box-img" src="./assets/devittle_logo.png" />
+          <div class="box-overlay box-overlay-dk">
+            <div class="box-details">
+              <ul>
+                <li><span>Type: </span>Website + Blog</li>
+                <li class="flex">
+                  <span>Tech: </span>React, Next.js, Hygraph CMS
+                </li>
+                <li>
+                  <span>URL: </span
+                  ><a
+                    href="https://devittle.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >https://devittle.com</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
-      <gallerycta-component></gallerycta-component>
-      </main>
-      <!-- FOOTER -->
+        </section>
+        <section class="box">
+          <p style="font-size: 5rem">🚧</p>
+          <div class="box-overlay box-overlay-dk">
+            <div class="box-details">
+              <ul>
+                <li><span>New projects coming soon!</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- FOOTER -->
     <footer-component></footer-component>
   </body>
 </html>

@@ -7,24 +7,29 @@ class Footer extends HTMLElement {
             <style>
                 .page-footer {
                     width: 100%;
+                    max-width: 900px;
+                    margin: 0 auto;
                     padding: 4rem;
                     font-family: var(--comic);
                     color: var(--neutral-lt);
                     background: var(--neutral-dkdk);
-                    letter-spacing: 1px;
                     text-align: center;
                     } 
-                .page-footer h2 {
-                    color: var(--primary-3);
+
+                .social-container {
+                     max-width: 400px;
+                     margin: 0 auto;
                 }
-                .page-footer p {
-                    font-size: 1.4rem;
+                .social-container h2 {
+                    font-family: var(--cursive);
+                    font-weight: 400;
+                    font-size: 4rem;
+                    margin-bottom: 2rem;
                 }
                 .social-links {
                     display: flex;
-                    justify-content: center;
-                    gap: 2rem;
-                    margin: 2rem 0 4rem 0;
+                    justify-content: space-evenly;
+                    margin-bottom: 4rem;
                 }
                 .social-links a {
                     display: flex;
@@ -40,10 +45,15 @@ class Footer extends HTMLElement {
                 .social-links a:hover {
                     background: var(--primary-3);
                 }
+                .copy {
+                    font-size: 1.4rem;
+                    padding-top: 4rem;
+                    border-top: 1px solid var(--primary-2);
+                }
             </style>
             <footer class="page-footer" id="page-footer">
                 <div class="social-container">
-                    <h2 class="uppercase-display">Join me on...</h2>
+                    <h2>Join me on...</h2>
                     <div class="social-links">
                         <a href="https://github.com/christadejesus" target="_blank" rel="noopener noreferrer"><i class="ri-github-fill"></i></a>
                         <a href="https://codepen.io/christadejesus" target="_blank" rel="noopener noreferrer"><i class="ri-codepen-fill"></i></a> 
@@ -51,7 +61,7 @@ class Footer extends HTMLElement {
                         <a href="https://facebook.com/christa.dejesus" target="_blank" rel="noopener noreferrer"><i class="ri-facebook-fill"></i></a> 
                     </div>
                 </div>
-                <p>&copy;2024 Christa DeJesus. All images, artwork, and content are subject to copyright. </p>
+                <p class="copy">&copy;2024 Christa DeJesus. All images, artwork, and content are subject to copyright. </p>
             </footer>
         `;
       }

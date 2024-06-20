@@ -1,111 +1,96 @@
-
-main.home {
-  height: 100vh;
-  min-height: 100vh;
-}
-
 /* HERO SECTION */
-.hero {
+
+.animated-hero {
   position: relative;
   width: 100%;
-  height: calc(100% - var(--topnav-height));
+  height: 500px;
   background: linear-gradient(var(--primary-3), var(--primary-3-lt));
   border: var(--border-comic);
   overflow: hidden;
-} 
-  .character-img {
-   position: absolute;
-   left: -100px;
-   object-position: center;
-   height: 100%;
-  }
-  .background-graphics {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 0;
-  }
-  .graphic-1 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    opacity: 50%;
-  }
-  .graphic-2 {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    opacity: 5%;
-  }
-  .hero-text {
-    position: absolute;
-    bottom: 140px;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .hero-text .message {
-    font-size: 2rem;
-    opacity: 0;
-    animation-name: showHeroText;
-    animation-duration: 300ms;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-  }
-  .hero-cta {
-    opacity: 0;
-    animation-name: showHeroText;
-    animation-duration: 300ms;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-  }
-  /* FOOTER */
-.page-footer {
-  text-align: right;
-  font-size: 1.4rem;
-  font-family: var(--comic);
-  font-style: italic;
+}
+.ah-graphics-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+}
+.ah-graphic-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  opacity: 50%;
+}
+.ah-graphic-2 {
+  position: absolute;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 5%;
+}
+.ah-main-img {
+  position: absolute;
+  left: -100px;
+  object-position: center;
+  height: 100%;
+ }
+.ah-message {
+  position: absolute;
+  bottom: 120px;
+  right: 5%;
+  font-size: 1.6rem;
+  opacity: 0;
+  animation-name: showHeroText;
+  animation-duration: 300ms;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
-  @media screen and (min-width: 500px) {
-    .character-img {
-      left: 0;
-      object-position: left;
-      height: 100%;
-     }
+/* ANIMATION */
+@keyframes showHeroText {
+  0% {
+    opacity: 0;
   }
-  @media screen and (min-width: 700px) {
-    .hero-text {
-      left: unset;
-      right: 5%;
-      bottom: 200px;
-    }
-    .graphic-2 {
-      position: absolute;
-      top: 0;
-      height: unset;
-      width: 100%;
-      opacity: 5%;
-    }
+  100% {
+    opacity: 1;
   }
-  @media screen and (min-width: 850px) {
-    .hero-text {
-      right: 10%;
-      bottom: 50%; 
-    }
-  }
+}
 
-  @keyframes showHeroText {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+/* MEDIA QUERIES */
+@media screen and (min-width: 400px) {
+  .ah-main-img {
+    left: -50px;
+    object-position: left;
+   }
+}
+@media screen and (min-width: 500px) {
+  .ah-main-img {
+    left: 0;
+   }
+}
+@media screen and (min-width: 600px) {
+  .ah-main-img {
+    left: 5%;
   }
+  .ah-message {
+    left: unset;
+    bottom: 200px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .ah-main-img {
+    left: 10%;
+   }
+  .ah-message {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 850px) {
+  .ah-message {
+    font-size: 2rem;
+    right: 10%;
+    bottom: 50%; 
+  }
+}
