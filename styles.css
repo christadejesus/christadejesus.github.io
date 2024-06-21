@@ -1,6 +1,18 @@
 @font-face {
+  font-family: "Passion One", sans-serif;
+  src: url("font/PassionOne-Regular.ttf");
+}
+@font-face {
+  font-family: "Pacifico", sans-serif;
+  src: url("font/Pacifico-Regular.ttf");
+}
+@font-face {
   font-family: "Komika";
   src: url("font/KOMIKASK.ttf");
+}
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("font/Inter-VariableFont_slnt\,wght.ttf")
 }
 /* RESET */
 * {
