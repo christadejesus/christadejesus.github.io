@@ -315,6 +315,9 @@ button {
 .box-overlay-dk:hover {
   opacity: 1;
 }
+.box-overlay-dk:active {
+  opacity: 1;
+}
 .box-overlay-heading {
   font-family: var(--display);
   text-transform: uppercase;
