@@ -16,11 +16,18 @@
   font-family: var(--comic);
   font-size: 2rem;
 }
-.guitar {
+.react {
+  font-size: 4rem;
+  color: var(--primary-2);
+}
+.thought-text {
+  position: absolute;
+  top: 40px;
   font-size: 3rem;
 }
-.inkscape {
-  line-height: 2;
+.heart {
+  color: var(--primary-4);
+  font-size: 3.4rem;
 }
 .about-tools {
   display: flex;
