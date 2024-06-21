@@ -109,7 +109,6 @@ a:hover {
   text-decoration: none;
 }
 p a {
-  color: var(--primary-1);
   font-weight: 700;
 }
 p a:hover {
@@ -260,7 +259,7 @@ button {
   align-items: center;
   justify-content: center;
   border: 3px solid black;
-  min-height: 300px;
+  min-height: 200px;
   text-align: center;
 }
 
@@ -331,9 +330,10 @@ button {
   font-family: var(--display);
   text-transform: uppercase;
   font-size: 40px;
+  font-weight: 400;
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
   line-height: 0.9;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   color: var(--neutral-lt);
   padding: 20px;
 }
@@ -378,10 +378,35 @@ button {
     display: grid;
     grid-template-columns: 1fr;
     gap: 4rem;
-    margin: 4rem 0;
+    margin: 2rem 0;
 }
-@media screen and (min-width: 750px) {
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin: 2rem 0;
+}
+/* used on projects page */
+.snippet-card {
+  border: var(--border-comic);
+  height: 200px;
+  overflow: hidden;
+}
+.snippet-card:hover {
+  opacity: 70%;
+}
+.snippet-card img {
+  min-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 650px) {
     .grid-2 {
         grid-template-columns: 1fr 1fr;
     }
+}
+@media screen and (min-width: 750px) {
+  .grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

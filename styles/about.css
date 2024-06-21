@@ -16,6 +16,9 @@
   font-family: var(--comic);
   font-size: 2rem;
 }
+.favs {
+  height: 300px;
+}
 .react {
   font-size: 4rem;
   color: var(--primary-2);
