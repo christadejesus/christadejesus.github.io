@@ -38,6 +38,7 @@
   --primary-1-dk: #11396d;
   --primary-2: #18BEBC;
   --primary-2-lt: #95EAD7;
+  --primary-2-xlt: #e4f7f2;
   --primary-2-dk: #027286;
   --primary-3: #FCBA04;
   --primary-3-lt: #FFDB78;
@@ -144,6 +145,9 @@ button {
 .btn-alert {
   color: var(--neutral-lt);
   background: var(--primary-4);
+}
+.btn-alert:hover {
+  background: var(--primary-4-dk);
 }
 .btn-bright {
   background: var(--primary-3);
